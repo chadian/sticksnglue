@@ -17,13 +17,13 @@ I came across a [tweet](https://twitter.com/weitzelb/status/718623065480019968)
 
 Most of this made sense to me, except for the part of the properties being assigned and then either accessible or being undefined. I had a hunch that it was related to something I blogged about [previously](http://sticksnglue.com/be-careful-with-those-primitives-types/).
 
-Turns out when using the <span class="lang:default decode:true crayon-inline ">.call</span> it&#8217;s actually returning an object. That first line is the equivalent of <span class="lang:default decode:true crayon-inline ">var five = new Number(5);</span> . This means:
+Turns out when using the <span class="lang:default decode:true crayon-inline ">.call</span> it's actually returning an object. That first line is the equivalent of <span class="lang:default decode:true crayon-inline ">var five = new Number(5);</span> . This means:
 
 <pre class="lang:default decode:true">var five = new Number(5);
 five instanceof Number; // true
 typeof five; // 'object'</pre>
 
-While it&#8217;s an object, you can add your properties but as soon as it&#8217;s autoboxed/primitive wrapped by the <span class="lang:default decode:true crayon-inline ">++</span> , it loses it&#8217;s abilities to hold those properties. This is shown by the fact that the <span class="lang:default decode:true crayon-inline">instanceof</span> and <span class="lang:default decode:true crayon-inline">typeof</span> values are now different:
+While it's an object, you can add your properties but as soon as it's autoboxed/primitive wrapped by the <span class="lang:default decode:true crayon-inline ">++</span> , it loses it's abilities to hold those properties. This is shown by the fact that the <span class="lang:default decode:true crayon-inline">instanceof</span> and <span class="lang:default decode:true crayon-inline">typeof</span> values are now different:
 
 <pre class="lang:default decode:true">// ... continuing from previous example
 five++; // is now 6
@@ -32,4 +32,4 @@ typeof five; // 'number'</pre>
 
 The rest of the puzzle is playing with the timing of return values and the difference of an assignment from <span class="lang:default decode:true crayon-inline ">number++</span> and <span class="lang:default decode:true crayon-inline">++number</span>.
 
-At least that&#8217;s the way I understand it, let me know if I&#8217;ve missed anything.
+At least that's the way I understand it, let me know if I've missed anything.

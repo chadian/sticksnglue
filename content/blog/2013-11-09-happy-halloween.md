@@ -11,7 +11,7 @@ sfw_pwd:
 categories:
   - Uncategorized
 ---
-I&#8217;ve pulled up these images from the archives, all the way back from 2006! The geek inside me was fully invested in the pumpkin carving that year.
+I've pulled up these images from the archives, all the way back from 2006! The geek inside me was fully invested in the pumpkin carving that year.
 
 [<img class="alignnone  wp-image-152" alt="Apple logo" src="http://sticksnglue.com/uploads/2013/11/IMG_0767.jpg" width="2816" height="2112" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0767.jpg 2816w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0767-300x225.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0767-1024x768.jpg 1024w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0767-624x468.jpg 624w" sizes="(max-width: 2816px) 100vw, 2816px" />](http://sticksnglue.com/uploads/2013/11/IMG_0767.jpg) [<img class="alignnone size-full wp-image-151" alt="Finder" src="http://sticksnglue.com/uploads/2013/11/IMG_0772.jpg" width="2816" height="2112" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0772.jpg 2816w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0772-300x225.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0772-1024x768.jpg 1024w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0772-624x468.jpg 624w" sizes="(max-width: 2816px) 100vw, 2816px" />](http://sticksnglue.com/uploads/2013/11/IMG_0772.jpg)
 
@@ -27,7 +27,7 @@ I&#8217;ve pulled up these images from the archives, all the way back from 2006!
   <a href="http://sticksnglue.com/uploads/2013/11/IMG_0774.jpg"><img class="size-full wp-image-149" alt="The 'X' in Mac OS X" src="http://sticksnglue.com/uploads/2013/11/IMG_0774.jpg" width="2112" height="2816" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0774.jpg 2112w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0774-225x300.jpg 225w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0774-768x1024.jpg 768w, http://www.sticksnglue.com/wordpress/../uploads/2013/11/IMG_0774-624x832.jpg 624w" sizes="(max-width: 2112px) 100vw, 2112px" /></a>
   
   <p class="wp-caption-text">
-    The &#8216;X&#8217; in Mac OS X
+    The 'X' in Mac OS X
   </p>
 </div>
 

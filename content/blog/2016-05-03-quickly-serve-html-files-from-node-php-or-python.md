@@ -17,7 +17,7 @@ First install <span class="lang:default decode:true  crayon-inline ">http-server
 
 <pre class="lang:default decode:true">npm install -g http-server</pre>
 
-Then it&#8217;s as easy as
+Then it's as easy as
 
 <pre class="lang:default decode:true">http-server</pre>
 
@@ -29,6 +29,6 @@ ie: <span class="lang:default decode:true  crayon-inline ">php -s localhost:800
 
 ## Python
 
-<pre class="lang:default decode:true">python -m SimpleHTTPServer &lt;port&gt;</pre>
+<pre class="lang:default decode:true">python -m SimpleHTTPServer <port></pre>
 
 ie: <span class="lang:default decode:true  crayon-inline ">python -m SimpleHTTPServer 8000</span>

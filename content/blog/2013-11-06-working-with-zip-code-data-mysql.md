@@ -1,6 +1,6 @@
 ---
 id: 139
-title: 'Working with ZIP Code Data &#038; MySQL'
+title: 'Working with ZIP Code Data & MySQL'
 date: 2013-11-06T14:07:18+00:00
 author: chadcarbert
 layout: post
@@ -16,13 +16,13 @@ tags:
   - mysql
   - zip code
 ---
-I&#8217;m working on a project currently where I need to be able to use zip code data, in relation to their longitude and latitude coordinates. I found what I felt was a <a title="Zip Code Data Download" href="http://www.boutell.com/zipcodes/" target="_blank">half decent source of the data</a>. The download file listed at the top says it includes CSV and SQL but I found the SQL implementation to not be quite what I was looking for, at least for MySQL.
+I'm working on a project currently where I need to be able to use zip code data, in relation to their longitude and latitude coordinates. I found what I felt was a <a title="Zip Code Data Download" href="http://www.boutell.com/zipcodes/" target="_blank">half decent source of the data</a>. The download file listed at the top says it includes CSV and SQL but I found the SQL implementation to not be quite what I was looking for, at least for MySQL.
 
 **At the bottom of this post you will find the download of the MySQL formatted zip codes.**
 
-With the MySQL database you have the options for doing geometric queries which I haven&#8217;t delved too far into, but it seemed really useful. I was using this data for proximity-based searches, using someone&#8217;s zip code.
+With the MySQL database you have the options for doing geometric queries which I haven't delved too far into, but it seemed really useful. I was using this data for proximity-based searches, using someone's zip code.
 
-The SQL that comes with the download is irrelevant to MySQL as it doesn&#8217;t work with that  <span class="lang:default decode:true  crayon-inline">AddGeometryColumn</span> function.
+The SQL that comes with the download is irrelevant to MySQL as it doesn't work with that  <span class="lang:default decode:true  crayon-inline">AddGeometryColumn</span> function.
 
 <pre class="lang:mysql decode:true">create table zcta (
     zip char(5) primary key,
@@ -36,7 +36,7 @@ select AddGeometryColumn('zipcode', 'zcta', 'location', -1, 'POINT', 2);</pre>
 
 However, the CSV data was full of what I needed. So after some looking around I was able to mold the data into the right format that would be applicable to MySQL.
 
-Here&#8217;s the create table syntax:
+Here's the create table syntax:
 
 <pre class="lang:mysql decode:true">CREATE TABLE `zcta` (
   `zip` char(5) NOT NULL,
@@ -53,12 +53,12 @@ The MyISAM engine is apparently better for creating spatial indexes, according t
 
 > `InnoDB` tables do not support spatial data types before MySQL 5.0.16. As of 5.0.16, `InnoDB` supports spatial data types, but not indexes on them.
 
-Alright, so I&#8217;m running with the MyISAM engine. I have the CSV file, and the SQL file doesn&#8217;t apply in this case. After building the table I am now able to import my data. The syntax for POINT columns is a little different so keep that in mind when inserting and selecting data. To get the CSV file into the right format I wrote this find/replace regex to run on the CSV data:
+Alright, so I'm running with the MyISAM engine. I have the CSV file, and the SQL file doesn't apply in this case. After building the table I am now able to import my data. The syntax for POINT columns is a little different so keep that in mind when inserting and selecting data. To get the CSV file into the right format I wrote this find/replace regex to run on the CSV data:
 
 <pre class="lang:default decode:true">Find: ^(((\(|)".*?",){3})"(.*?){1}","(.*?){1}"(,.*)$
 Replace: \1 GeomFromText('POINT(\4 \5)')\6</pre>
 
-I then wrote the first part of the INSERT statement defining the necessary columns to be inserted. Run the script and you&#8217;re data should import and you&#8217;re ready to go. And that was able to get me the final format to insert the data into the SPATIAL-aware database setup with our long/lat POINT datatypes.
+I then wrote the first part of the INSERT statement defining the necessary columns to be inserted. Run the script and you're data should import and you're ready to go. And that was able to get me the final format to insert the data into the SPATIAL-aware database setup with our long/lat POINT datatypes.
 
 ## The end result
 

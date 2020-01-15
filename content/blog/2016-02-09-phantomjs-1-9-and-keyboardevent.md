@@ -7,7 +7,7 @@ layout: post
 guid: http://sticksnglue.com/wordpress/?p=236
 permalink: /phantomjs-1-9-and-keyboardevent/
 categories:
-  - 'Bugs &amp; Fixes'
+  - 'Bugs & Fixes'
   - Learning
   - Tools
 tags:
@@ -31,4 +31,4 @@ if (window._phantom) {
 // in code, single implementation for phantom or browser
 var event = window.KeyboardEvent('keypress');</pre>
 
-This could be pretty dangerous depending on your use case, but at least it&#8217;s isolated to your test. I wasn&#8217;t sure what other method to use, but if you have one I would love to hear it in the comments. Also, Phantom 2.x should fix this, but it wasn&#8217;t an option in this case.
+This could be pretty dangerous depending on your use case, but at least it's isolated to your test. I wasn't sure what other method to use, but if you have one I would love to hear it in the comments. Also, Phantom 2.x should fix this, but it wasn't an option in this case.
