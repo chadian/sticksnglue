@@ -16,33 +16,38 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1 class={"post__title"}>
-          {post.frontmatter.title}
-        </h1>
-        <p>
-          {post.frontmatter.date}
-        </p>
-        <div
-          class={"post__content"}
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-        <hr/>
+        <article>
+          <h1 class={"post__title"}>{post.frontmatter.title}</h1>
+          <p>{post.frontmatter.date}</p>
+          <content
+            class={"post__content"}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </article>
+        <hr />
 
-        <ul>
-          <li>
-            {previous && (
+        <ul style={{
+          marginTop: '3rem',
+          marginRight: 0,
+          marginLeft: 0,
+          padding: 0,
+          listStyleType: 'none'
+        }}>
+          {previous && (
+            <li>
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            )}
-          </li>
-          <li>
-            {next && (
+            </li>
+          )}
+
+          {next && (
+            <li>
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            )}
-          </li>
+            </li>
+          )}
         </ul>
       </Layout>
     )
