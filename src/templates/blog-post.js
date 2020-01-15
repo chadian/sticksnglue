@@ -17,10 +17,10 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
-          <h1 class={"post__title"}>{post.frontmatter.title}</h1>
+          <h1 class="post__title">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
           <content
-            class={"post__content"}
+            class="post__content"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>
@@ -35,17 +35,20 @@ class BlogPostTemplate extends React.Component {
         }}>
           {previous && (
             <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
+              <Link
+                to={previous.fields.slug} rel="prev"
+                dangerouslySetInnerHTML={{ __html: `← ${previous.frontmatter.title}` }}
+              />
             </li>
           )}
 
           {next && (
             <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
+              <Link
+                to={next.fields.slug}
+                rel="next"
+                dangerouslySetInnerHTML={{ __html: `${next.frontmatter.title} →` }}
+              />
             </li>
           )}
         </ul>
