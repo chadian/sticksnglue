@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "sticksnglue",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A gastsby blog for my blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Chad Carbert<chadcarbert@me.com>",
   "dependencies": {
     "gatsby": "^2.13.51",
     "gatsby-image": "^2.2.8",
@@ -15,6 +12,7 @@
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.3",
+    "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-plugin-typography": "^2.3.2",
     "gatsby-remark-copy-linked-files": "^2.1.4",
@@ -25,6 +23,7 @@
     "gatsby-source-filesystem": "^2.1.8",
     "gatsby-transformer-remark": "^2.6.10",
     "gatsby-transformer-sharp": "^2.2.5",
+    "node-sass": "^4.13.0",
     "prismjs": "^1.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

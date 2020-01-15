@@ -1,0 +1,7 @@
+::selection {
+  background: rgba($forestGreen, 0.25); /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: rgba($forestGreen, 0.25); /* Gecko Browsers */
+}

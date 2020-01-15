@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'BrandonText';
+  font-weight: bold;
+  font-style: normal;
+  src: url('vendor/webfonts/3AD868_0_0.eot');
+  src: url('vendor/webfonts/3AD868_0_0.eot?#iefix') format('embedded-opentype'), url('vendor/webfonts/3AD868_0_0.woff2') format('woff2'), url('vendor/webfonts/3AD868_0_0.woff') format('woff'), url('vendor/webfonts/3AD868_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BrandonText';
+  font-weight: bold;
+  font-style: italic;
+  src: url('vendor/webfonts/3AD868_1_0.eot');
+  src: url('vendor/webfonts/3AD868_1_0.eot?#iefix') format('embedded-opentype'), url('vendor/webfonts/3AD868_1_0.woff2') format('woff2'), url('vendor/webfonts/3AD868_1_0.woff') format('woff'), url('vendor/webfonts/3AD868_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BrandonText';
+  font-weight: normal;
+  font-style: normal;
+  src: url('vendor/webfonts/3AD868_2_0.eot');
+  src: url('vendor/webfonts/3AD868_2_0.eot?#iefix') format('embedded-opentype'), url('vendor/webfonts/3AD868_2_0.woff2') format('woff2'), url('vendor/webfonts/3AD868_2_0.woff') format('woff'), url('vendor/webfonts/3AD868_2_0.ttf') format('truetype');
+}
+
+.BrandonText-bold-normal {
+  font-family: BrandonText;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.BrandonText-normal-italic {
+  font-family: BrandonText;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.BrandonText-normal-normal {
+  font-family: BrandonText;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  letter-spacing: -0.002em;
+  line-height: 1.5;
+  font-family: BrandonText;
+  font-size: 22px;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  letter-spacing: -0.025em;
+}
+

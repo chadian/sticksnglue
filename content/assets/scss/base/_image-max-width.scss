@@ -1,0 +1,12 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// by default wp captions will have a hardcoded
+// width set via style attribtue
+.wp-caption {
+  width:auto !important;
+  max-width:100% !important;
+  height:auto !important;
+}

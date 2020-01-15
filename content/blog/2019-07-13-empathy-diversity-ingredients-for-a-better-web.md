@@ -1,6 +1,6 @@
 ---
 id: 294
-title: 'Empathy &#038; Diversity, ingredients for a better web'
+title: 'Empathy & Diversity, ingredients for a better web'
 date: 2019-07-13T04:21:42+00:00
 author: chadcarbert
 layout: post

@@ -1,0 +1,52 @@
+.header {
+  position: relative;
+  padding: 4.25rem 0;
+  overflow: hidden;
+}
+
+.header__site-title {
+  @include font-smoothing;
+
+  color: $forestGreen;
+  font-size: 3.5rem;
+  letter-spacing: -0.05rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header__tag {
+  font-style: italic;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+  margin-top: -0.5rem;
+  margin-bottom: 0;
+  color: $charcoal;
+}
+
+.header__angle-bracket,
+.header__curly-bracket {
+  &::before {
+    @include font-smoothing;
+
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    line-height: 0;
+    display: inline-block;
+    color: $forestGreen;
+  }
+}
+
+.header__angle-bracket::before {
+  content: '<';
+  top: 1.5rem;
+  right: 0;
+  font-size: 22rem;
+}
+
+.header__curly-bracket::before {
+  content: '}';
+  font-size: 18rem;
+  bottom: 1.75rem;
+  right: 5rem;
+}
