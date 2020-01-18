@@ -9,19 +9,19 @@ class Layout extends React.Component {
 
     return (
       <>
-        <div class="page-container">
-          <header class="header">
+        <div className="page-container">
+          <header className="header">
             <Link to="/">
-              <h1 class="header__site-title">sticksnglue</h1>
-              <p class="header__tag">building for the fun of it</p>
+              <h1 className="header__site-title">sticksnglue</h1>
+              <p className="header__tag">building for the fun of it</p>
             </Link>
-            <div class="header__angle-bracket"></div>
-            <div class="header__curly-bracket"></div>
+            <div className="header__angle-bracket"></div>
+            <div className="header__curly-bracket"></div>
           </header>
         </div>
 
-        <div class="page-container">
-          <main class="main-content">{children}</main>
+        <div className="page-container">
+          <main className="main-content">{children}</main>
         </div>
       </>
     )
