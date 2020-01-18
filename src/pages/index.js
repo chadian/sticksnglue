@@ -14,18 +14,18 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
 
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div className="table-of-contents-item" key={node.fields.slug}>
-              <h1 class="table-of-contents-item__title">
-                <Link to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h1>
-            </div>
-          )
-        })}
+        <div className="main-content-index">
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <div className="table-of-contents-item" key={node.fields.slug}>
+                <h1 class="table-of-contents-item__title">
+                  <Link to={node.fields.slug}>{title}</Link>
+                </h1>
+              </div>
+            )
+          })}
+        </div>
       </Layout>
     )
   }

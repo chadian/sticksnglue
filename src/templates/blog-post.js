@@ -16,42 +16,44 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
-          <h1 className="post__title">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-          <content
-            className="post__content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </article>
-        <hr />
+        <div className="main-content-blog-post">
+          <article>
+            <h1 className="post__title">{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.date}</p>
+            <content
+              className="post__content"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+          </article>
+          <hr />
 
-        <ul style={{
-          marginTop: '3rem',
-          marginRight: 0,
-          marginLeft: 0,
-          padding: 0,
-          listStyleType: 'none'
-        }}>
-          {previous && (
-            <li>
-              <Link
-                to={previous.fields.slug} rel="prev"
-                dangerouslySetInnerHTML={{ __html: `← ${previous.frontmatter.title}` }}
-              />
-            </li>
-          )}
+          <ul style={{
+            marginTop: '3rem',
+            marginRight: 0,
+            marginLeft: 0,
+            padding: 0,
+            listStyleType: 'none'
+          }}>
+            {previous && (
+              <li>
+                <Link
+                  to={previous.fields.slug} rel="prev"
+                  dangerouslySetInnerHTML={{ __html: `← ${previous.frontmatter.title}` }}
+                />
+              </li>
+            )}
 
-          {next && (
-            <li>
-              <Link
-                to={next.fields.slug}
-                rel="next"
-                dangerouslySetInnerHTML={{ __html: `${next.frontmatter.title} →` }}
-              />
-            </li>
-          )}
-        </ul>
+            {next && (
+              <li>
+                <Link
+                  to={next.fields.slug}
+                  rel="next"
+                  dangerouslySetInnerHTML={{ __html: `${next.frontmatter.title} →` }}
+                />
+              </li>
+            )}
+          </ul>
+        </div>
       </Layout>
     )
   }

@@ -21,7 +21,7 @@ class Layout extends React.Component {
         </div>
 
         <div className="page-container">
-          <main className="main-content">{children}</main>
+          {children}
         </div>
       </>
     )
