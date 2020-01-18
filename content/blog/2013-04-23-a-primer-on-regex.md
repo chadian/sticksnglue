@@ -14,8 +14,10 @@ tags:
   - regex
   - regular expressions
 ---
-If you're like me and you've relied on regex to quickly solve the odd search problem and string mashing, but haven't really made use of some of the shortcuts and optimizations, then I recommend giving this video a shot (thanks to smashing magazine for [tweeting this video](https://twitter.com/smashingmag/status/326012584312569856)). She provides a decent breakdown behind the logic in tackling problems with regular expressions, including if you should use them at all. There's also skill testing questions throughout which are a fun challenge as you go.  
-  
+If you're like me and you've relied on regex to quickly solve the odd search problem and string mashing, but haven't really made use of some of the shortcuts and optimizations, then I recommend giving this video a shot (thanks to smashing magazine for [tweeting this video](https://twitter.com/smashingmag/status/326012584312569856)). She provides a decent breakdown behind the logic in tackling problems with regular expressions, including if you should use them at all. There's also skill testing questions throughout which are a fun challenge as you go.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EkluES9Rvak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 A few more resources to keep you going after the video:
 
   * [A handy cheat sheet](http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)
@@ -26,5 +28,5 @@ If you have any regular expression resources / learning suggestions feel free to
 
 _Also, a thanks to smashing magazine for [tweeting](https://twitter.com/smashingmag/status/326012584312569856) this useful video, follow them: @smashingmag_
 
-[Update]  
+[Update]
 Found that [this tool](http://www.phpliveregex.com/) can be pretty handy for live testing, practicing regular expressions (specifically for PHP). Gives you the resulting function with parameters to use, too.
