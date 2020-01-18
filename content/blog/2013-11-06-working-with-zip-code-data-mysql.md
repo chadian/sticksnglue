@@ -63,6 +63,6 @@ I then wrote the first part of the INSERT statement defining the necessary colum
 ## The end result
 
 The SQL file of zip codes formatted for MySQL based on my create table syntax above:  
-[MySQL ZIP Codes Data](http://sticksnglue.com/uploads/2013/11/zipcode.sql_.zip)
+[MySQL ZIP Codes Data](/wordpress/2013/11/zipcode.sql_.zip)
 
 So far this data has been working out really well for me, let me know if you notice any shortcomings or have any questions. Again, I pulled this data from <a href="http://www.boutell.com/zipcodes/" target="_blank">this blog</a> so if you need any information specific to the source of this data there are some details there. Cheers!

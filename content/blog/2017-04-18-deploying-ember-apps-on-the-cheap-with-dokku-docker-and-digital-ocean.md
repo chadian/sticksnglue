@@ -40,9 +40,9 @@ Now let's get your Dokku digital ocean droplet going.
   1. Login to Digital Ocean.
   2. Click 'create droplet'.
   3. Click the "One-click apps" tab.  
-<img class="alignnone size-full wp-image-258" src="http://sticksnglue.com/uploads/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png" alt="ScreenShot2017-04-17at11.47.02AM" width="347" height="203" srcset="http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png 347w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM-300x176.png 300w" sizes="(max-width: 347px) 100vw, 347px" /> 
+<img class="alignnone size-full wp-image-258" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png" alt="ScreenShot2017-04-17at11.47.02AM" width="347" height="203" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png 347w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM-300x176.png 300w" sizes="(max-width: 347px) 100vw, 347px" /> 
   4. Choose Dokku 0.8.0 on 16.04  
-<img class="alignnone size-full wp-image-257" src="http://sticksnglue.com/uploads/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png" alt="ScreenShot2017-04-17at11.46.50AM" width="328" height="60" srcset="http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png 328w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM-300x55.png 300w" sizes="(max-width: 328px) 100vw, 328px" /> 
+<img class="alignnone size-full wp-image-257" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png" alt="ScreenShot2017-04-17at11.46.50AM" width="328" height="60" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png 328w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM-300x55.png 300w" sizes="(max-width: 328px) 100vw, 328px" /> 
   5. Choose a size at $5/mo (let's keep this cheap!)
   6. Pick your preferred region
   7. Add your ssh keys if you got them, it'll make ssh'ing in easier.
@@ -51,7 +51,7 @@ Now let's get your Dokku digital ocean droplet going.
 
 Under Droplets, check that your droplet is being created.
 
-<img class="alignnone size-full wp-image-259" src="http://sticksnglue.com/uploads/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png" alt="ScreenShot2017-04-17at11.47.49AM" width="1001" height="118" srcset="http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png 1001w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-300x35.png 300w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-768x91.png 768w" sizes="(max-width: 1001px) 100vw, 1001px" /><img class="alignnone size-full wp-image-260" src="http://sticksnglue.com/uploads/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png" alt="ScreenShot2017-04-17at11.48.26AM" width="993" height="110" srcset="http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png 993w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-300x33.png 300w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-768x85.png 768w" sizes="(max-width: 993px) 100vw, 993px" /> 
+<img class="alignnone size-full wp-image-259" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png" alt="ScreenShot2017-04-17at11.47.49AM" width="1001" height="118" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png 1001w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-300x35.png 300w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-768x91.png 768w" sizes="(max-width: 1001px) 100vw, 1001px" /><img class="alignnone size-full wp-image-260" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png" alt="ScreenShot2017-04-17at11.48.26AM" width="993" height="110" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png 993w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-300x33.png 300w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-768x85.png 768w" sizes="(max-width: 993px) 100vw, 993px" /> 
 
 You should get an IP address for your droplet, in my case it gave me 162.243.242.65. Go ahead and ssh into your newly created droplet.
 
@@ -70,7 +70,7 @@ In your browser go to http://your.ip.address with "your.ip.address" being the IP
 
 You should see a screen similar to:
 
-<img class="alignnone size-full wp-image-263" src="http://sticksnglue.com/uploads/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png" alt="Screen Shot 2017-04-18 at 7.51.06 AM" width="643" height="555" srcset="http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png 643w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM-300x259.png 300w" sizes="(max-width: 643px) 100vw, 643px" /> 
+<img class="alignnone size-full wp-image-263" src="/wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png" alt="Screen Shot 2017-04-18 at 7.51.06 AM" width="643" height="555" srcset="/wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png 643w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM-300x259.png 300w" sizes="(max-width: 643px) 100vw, 643px" /> 
 
 Paste your public key which may be the same public key you use for things like github, unless you've generated a different one. It might have already filled it in if you had supplied digital ocean with a public key for the droplet. **Make sure you have pasted something into the public key.** This page is only available once after clicking "Finish Setup". If you are trying to keep this cheap and plan on only using an IP address make sure you leave "virtualhost naming" unchecked.
 
@@ -169,7 +169,7 @@ git commit -m "Add .buildpacks with ember buildpack"</pre>
        http://your.ip.address:16523</pre>
         
         Again, with "your.ip.address" being your droplet's IP address.  
-<img class="alignnone size-full wp-image-264" src="http://sticksnglue.com/uploads/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png" alt="Screen Shot 2017-04-18 at 8.09.08 AM" width="1020" height="893" srcset="http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png 1020w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-300x263.png 300w, http://www.sticksnglue.com/wordpress/../uploads/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-768x672.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" />  
+<img class="alignnone size-full wp-image-264" src="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png" alt="Screen Shot 2017-04-18 at 8.09.08 AM" width="1020" height="893" srcset="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png 1020w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-300x263.png 300w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-768x672.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" />  
         and there it is, we can see in the markup that we have an Ember application with our production build fingerprinted .js files.</li> </ol> 
         
         ## Bonus steps

@@ -18,6 +18,6 @@ Lately, I've been diving into heavier frameworks and have started to to use PhpS
 
 The fix to getting this to work: make sure you have installed the TTF version of the font ([source](http://youtrack.jetbrains.com/issue/IDEA-93404 "Source Code Pro - Font Rendering Issue")).
 
-<img class="alignnone size-full wp-image-109" alt="Source Code Pro in PhpStorm" src="http://sticksnglue.com/uploads/2013/09/source-code-pro.jpg" width="861" height="572" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/09/source-code-pro.jpg 861w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/source-code-pro-300x199.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/source-code-pro-624x414.jpg 624w" sizes="(max-width: 861px) 100vw, 861px" />
+<img class="alignnone size-full wp-image-109" alt="Source Code Pro in PhpStorm" src="/wordpress/2013/09/source-code-pro.jpg" width="861" height="572" srcset="/wordpress/2013/09/source-code-pro.jpg 861w, /wordpress/2013/09/source-code-pro-300x199.jpg 300w, /wordpress/2013/09/source-code-pro-624x414.jpg 624w" sizes="(max-width: 861px) 100vw, 861px" />
 
 Next up, a better color scheme.

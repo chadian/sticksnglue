@@ -20,7 +20,7 @@ Alright, so I thought everything was all set in my [last post](http://sticksnglu
 
 If you you have PhpStorm and your fonts look weird like one of the two screenshots below, then I have a fix for you.
 
-[<img class="alignnone  wp-image-114" alt="PhpStorm - Mangled font" src="http://sticksnglue.com/uploads/2013/09/10.jpg" width="1224" height="842" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/09/10.jpg 1224w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/10-300x206.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/10-1024x704.jpg 1024w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/10-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" />](http://sticksnglue.com/uploads/2013/09/10.jpg) [<img class="alignnone  wp-image-115" alt="PhpStorm - Mangled Font" src="http://sticksnglue.com/uploads/2013/09/1.jpg" width="1224" height="842" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/09/1.jpg 1224w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/1-300x206.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/1-1024x704.jpg 1024w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/1-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" />](http://sticksnglue.com/uploads/2013/09/1.jpg)
+[<img class="alignnone  wp-image-114" alt="PhpStorm - Mangled font" src="/wordpress/2013/09/10.jpg" width="1224" height="842" srcset="/wordpress/2013/09/10.jpg 1224w, /wordpress/2013/09/10-300x206.jpg 300w, /wordpress/2013/09/10-1024x704.jpg 1024w, /wordpress/2013/09/10-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" />](/wordpress/2013/09/10.jpg) [<img class="alignnone  wp-image-115" alt="PhpStorm - Mangled Font" src="/wordpress/2013/09/1.jpg" width="1224" height="842" srcset="/wordpress/2013/09/1.jpg 1224w, /wordpress/2013/09/1-300x206.jpg 300w, /wordpress/2013/09/1-1024x704.jpg 1024w, /wordpress/2013/09/1-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" />](/wordpress/2013/09/1.jpg)
 
 **The Analysis**
 
@@ -36,22 +36,22 @@ The answer is you must store these fonts in your Java home's font folder. To fin
 
 One of these two commands, most likely the first one, will return a directory path (**Update**: If this doesn't work for you, check out  [this StackOverflow post](http://stackoverflow.com/q/6588390/200145 "StackOverflow - Mac OS X & Java Home") as suggested by Emanuil in comments, thanks Emanuil!). Go to this directory path, then proceed to go to 'lib', then 'fonts' folder. In the case of my machine, the command returned /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/ and then I navigated to the containing lib/fonts directory ending up at /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/fonts
 
-Now that you're in your java fonts directory, put your Source Code Pro ttf or otf font file.  
-(**Important:** As mentioned at the top of the post in Update #2, as of OS X Yosemite and PHPStorm 8, it appears that only the 'TTF' format will bring in the various font weights for a family. You still need to include the TTF for each desired weight). 
+Now that you're in your java fonts directory, put your Source Code Pro ttf or otf font file.
+(**Important:** As mentioned at the top of the post in Update #2, as of OS X Yosemite and PHPStorm 8, it appears that only the 'TTF' format will bring in the various font weights for a family. You still need to include the TTF for each desired weight).
 
 Restart PhpStorm and your fonts should be ready to go with bold, italics and everything. Note, one thing I discovered in my testing is that the otf and ttf versions of Source Code Pro rendered slightly different from each other. The ttf rendered slightly thinner, than the otf (screenshots below). I'm not sure if this applies to other fonts, or just Source Code Pro, but I thought I would mention it.
 
-**OTF**<a style="line-height: 1.714285714; font-size: 1rem;" href="http://sticksnglue.com/uploads/2013/09/12.jpg"><img class="alignnone  wp-image-117" alt="12" src="http://sticksnglue.com/uploads/2013/09/12.jpg" width="1224" height="842" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/09/12.jpg 1224w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/12-300x206.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/12-1024x704.jpg 1024w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/12-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" /></a>
+**OTF**<a style="line-height: 1.714285714; font-size: 1rem;" href="/wordpress/2013/09/12.jpg"><img class="alignnone  wp-image-117" alt="12" src="/wordpress/2013/09/12.jpg" width="1224" height="842" srcset="/wordpress/2013/09/12.jpg 1224w, /wordpress/2013/09/12-300x206.jpg 300w, /wordpress/2013/09/12-1024x704.jpg 1024w, /wordpress/2013/09/12-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" /></a>
 
 &nbsp;
 
-**TTF**<a style="line-height: 1.714285714; font-size: 1rem;" href="http://sticksnglue.com/uploads/2013/09/6.jpg"><img class="alignnone  wp-image-118" alt="6" src="http://sticksnglue.com/uploads/2013/09/6.jpg" width="1224" height="842" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/09/6.jpg 1224w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/6-300x206.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/6-1024x704.jpg 1024w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/6-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" /></a>
+**TTF**<a style="line-height: 1.714285714; font-size: 1rem;" href="/wordpress/2013/09/6.jpg"><img class="alignnone  wp-image-118" alt="6" src="/wordpress/2013/09/6.jpg" width="1224" height="842" srcset="/wordpress/2013/09/6.jpg 1224w, /wordpress/2013/09/6-300x206.jpg 300w, /wordpress/2013/09/6-1024x704.jpg 1024w, /wordpress/2013/09/6-624x429.jpg 624w" sizes="(max-width: 1224px) 100vw, 1224px" /></a>
 
 Hope that gets things going for anyone having trouble with fonts rendering properly in PhpStorm.
 
-**UPDATE  
-** 
+**UPDATE
+**
 
 If you include the font files of the different Source Code Pro weights you will also get these different options, which some have reported as missing from the fonts menu. Instructions for placing the font files are as mentioned above.
 
-[<img class="alignnone size-full wp-image-136" alt="source-code-pro-weights" src="http://sticksnglue.com/uploads/2013/09/source-code-pro-weights.jpg" width="861" height="572" srcset="http://www.sticksnglue.com/wordpress/../uploads/2013/09/source-code-pro-weights.jpg 861w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/source-code-pro-weights-300x199.jpg 300w, http://www.sticksnglue.com/wordpress/../uploads/2013/09/source-code-pro-weights-624x414.jpg 624w" sizes="(max-width: 861px) 100vw, 861px" />](http://sticksnglue.com/uploads/2013/09/source-code-pro-weights.jpg)
+[<img class="alignnone size-full wp-image-136" alt="source-code-pro-weights" src="/wordpress/2013/09/source-code-pro-weights.jpg" width="861" height="572" srcset="/wordpress/2013/09/source-code-pro-weights.jpg 861w, /wordpress/2013/09/source-code-pro-weights-300x199.jpg 300w, /wordpress/2013/09/source-code-pro-weights-624x414.jpg 624w" sizes="(max-width: 861px) 100vw, 861px" />](/wordpress/2013/09/source-code-pro-weights.jpg)
