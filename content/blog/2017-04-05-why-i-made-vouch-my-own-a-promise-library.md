@@ -2,10 +2,6 @@
 id: 248
 title: Why I made Vouch, my own A+ promise library
 date: 2017-04-05T05:23:56+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=248
-permalink: /why-i-made-vouch-my-own-a-promise-library/
 categories:
   - Learning
   - Projects

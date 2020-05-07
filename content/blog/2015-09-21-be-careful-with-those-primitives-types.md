@@ -2,12 +2,6 @@
 id: 214
 title: Be careful with those primitives types
 date: 2015-09-21T05:48:25+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=214
-permalink: /be-careful-with-those-primitives-types/
-sfw_pwd:
-  - bao3uMMTeNP4
 categories:
   - Learning
 tags:

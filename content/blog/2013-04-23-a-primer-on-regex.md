@@ -2,12 +2,6 @@
 id: 26
 title: A primer on Regex
 date: 2013-04-23T03:56:04+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=26
-permalink: /a-primer-on-regex/
-sfw_pwd:
-  - foRSvYu5HBtq
 categories:
   - Learning
 tags:

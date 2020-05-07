@@ -2,10 +2,6 @@
 id: 236
 title: PhantomJS 1.9 and KeyboardEvent
 date: 2016-02-09T19:26:08+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=236
-permalink: /phantomjs-1-9-and-keyboardevent/
 categories:
   - 'Bugs & Fixes'
   - Learning

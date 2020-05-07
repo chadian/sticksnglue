@@ -2,10 +2,6 @@
 id: 282
 title: Building Ember Apps with GraphQL
 date: 2018-11-16T23:16:51+00:00
-author: chadcarbert
-layout: post
-guid: http://www.sticksnglue.com/?p=282
-permalink: /building-ember-apps-with-graphql/
 categories:
   - Blurbs
   - Learning

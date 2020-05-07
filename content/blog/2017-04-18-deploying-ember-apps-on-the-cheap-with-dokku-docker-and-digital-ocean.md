@@ -2,10 +2,6 @@
 id: 256
 title: Deploying Ember apps on the cheap with Dokku, Docker and Digital Ocean.
 date: 2017-04-18T15:22:17+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=256
-permalink: /deploying-ember-apps-on-the-cheap-with-dokku-docker-and-digital-ocean/
 categories:
   - Projects
   - Tools
@@ -14,7 +10,7 @@ categories:
 
 With Ember we are spoiled with an excellent \`ember-cli-deploy\` tool. Need to deploy somewhere, you can go shopping for many of the supported deploy plugins. One company that has made deployment dead simple is Heroku. When I was looking to show off some local Ember apps I wanted something cheap and easy to setup. Heroku would be nice but I think we could go cheaper.
 
-Enter [Dokku](http://dokku.viewdocs.io/dokku/). It's project aimed at providing Heroku support by wrapping a docker heroku-friendly project called [Herokuish](https://github.com/gliderlabs/herokuish). Dokku gives you a PAAS by wrapping containers with an [nginx](https://www.nginx.com/resources/wiki/) proxy router. It has  
+Enter [Dokku](http://dokku.viewdocs.io/dokku/). It's project aimed at providing Heroku support by wrapping a docker heroku-friendly project called [Herokuish](https://github.com/gliderlabs/herokuish). Dokku gives you a PAAS by wrapping containers with an [nginx](https://www.nginx.com/resources/wiki/) proxy router. It has
 great settings and plugins that help you extend it for a number of use cases. Because Dokku can detect [buildpacks](https://devcenter.heroku.com/articles/buildpacks) and leverage herokuish we can deploy via a git push, using heroku buildpacks, and get a deployed container. With buildpacks you don't actually need to know Docker or setup the container.
 
 The last piece of the puzzle is [Digital Ocean](https://www.digitalocean.com/). It provides affordable virtual machine hosting with an easy to understand interface and luckily for us a one-click install of Dokku on a droplet.
@@ -25,9 +21,9 @@ With this rough outline let's get started.
 
 Feel free to skip this step if you've already got an ember project.
 
-We'll use a stock ember project.  
-1. Go into a fresh folder, and run <span class="lang:default decode:true crayon-inline ">ember init</span>  
-2. Let's make sure we're tracking this in a git repo, run <span class="lang:default decode:true crayon-inline">git init</span>  
+We'll use a stock ember project.
+1. Go into a fresh folder, and run <span class="lang:default decode:true crayon-inline ">ember init</span>
+2. Let's make sure we're tracking this in a git repo, run <span class="lang:default decode:true crayon-inline">git init</span>
 3. Let's commit the empty ember project:
 
 <pre class="lang:default decode:true">git add .
@@ -39,10 +35,10 @@ Now let's get your Dokku digital ocean droplet going.
 
   1. Login to Digital Ocean.
   2. Click 'create droplet'.
-  3. Click the "One-click apps" tab.  
-<img class="alignnone size-full wp-image-258" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png" alt="ScreenShot2017-04-17at11.47.02AM" width="347" height="203" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png 347w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM-300x176.png 300w" sizes="(max-width: 347px) 100vw, 347px" /> 
-  4. Choose Dokku 0.8.0 on 16.04  
-<img class="alignnone size-full wp-image-257" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png" alt="ScreenShot2017-04-17at11.46.50AM" width="328" height="60" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png 328w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM-300x55.png 300w" sizes="(max-width: 328px) 100vw, 328px" /> 
+  3. Click the "One-click apps" tab.
+<img class="alignnone size-full wp-image-258" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png" alt="ScreenShot2017-04-17at11.47.02AM" width="347" height="203" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png 347w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM-300x176.png 300w" sizes="(max-width: 347px) 100vw, 347px" />
+  4. Choose Dokku 0.8.0 on 16.04
+<img class="alignnone size-full wp-image-257" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png" alt="ScreenShot2017-04-17at11.46.50AM" width="328" height="60" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png 328w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM-300x55.png 300w" sizes="(max-width: 328px) 100vw, 328px" />
   5. Choose a size at $5/mo (let's keep this cheap!)
   6. Pick your preferred region
   7. Add your ssh keys if you got them, it'll make ssh'ing in easier.
@@ -51,7 +47,7 @@ Now let's get your Dokku digital ocean droplet going.
 
 Under Droplets, check that your droplet is being created.
 
-<img class="alignnone size-full wp-image-259" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png" alt="ScreenShot2017-04-17at11.47.49AM" width="1001" height="118" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png 1001w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-300x35.png 300w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-768x91.png 768w" sizes="(max-width: 1001px) 100vw, 1001px" /><img class="alignnone size-full wp-image-260" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png" alt="ScreenShot2017-04-17at11.48.26AM" width="993" height="110" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png 993w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-300x33.png 300w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-768x85.png 768w" sizes="(max-width: 993px) 100vw, 993px" /> 
+<img class="alignnone size-full wp-image-259" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png" alt="ScreenShot2017-04-17at11.47.49AM" width="1001" height="118" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM.png 1001w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-300x35.png 300w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.4920AM-768x91.png 768w" sizes="(max-width: 1001px) 100vw, 1001px" /><img class="alignnone size-full wp-image-260" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png" alt="ScreenShot2017-04-17at11.48.26AM" width="993" height="110" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM.png 993w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-300x33.png 300w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.48.2620AM-768x85.png 768w" sizes="(max-width: 993px) 100vw, 993px" />
 
 You should get an IP address for your droplet, in my case it gave me 162.243.242.65. Go ahead and ssh into your newly created droplet.
 
@@ -70,7 +66,7 @@ In your browser go to http://your.ip.address with "your.ip.address" being the IP
 
 You should see a screen similar to:
 
-<img class="alignnone size-full wp-image-263" src="/wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png" alt="Screen Shot 2017-04-18 at 7.51.06 AM" width="643" height="555" srcset="/wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png 643w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM-300x259.png 300w" sizes="(max-width: 643px) 100vw, 643px" /> 
+<img class="alignnone size-full wp-image-263" src="/wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png" alt="Screen Shot 2017-04-18 at 7.51.06 AM" width="643" height="555" srcset="/wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM.png 643w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-7.51.06-AM-300x259.png 300w" sizes="(max-width: 643px) 100vw, 643px" />
 
 Paste your public key which may be the same public key you use for things like github, unless you've generated a different one. It might have already filled it in if you had supplied digital ocean with a public key for the droplet. **Make sure you have pasted something into the public key.** This page is only available once after clicking "Finish Setup". If you are trying to keep this cheap and plan on only using an IP address make sure you leave "virtualhost naming" unchecked.
 
@@ -149,44 +145,44 @@ This is kind of the cool part. Because dokku can be treated like Heroku we can u
 git commit -m "Add ember-cli-deploy and build plugin"</pre>
 
   4. Dokku tries to do its best to automatically determine the heroku buildpack for a given application but given ours is Ember it needs a bit more setup than a regular node app. There are many different ways to specify the buildpack for an app with Dokku but I prefer setting the <span class="lang:default decode:true crayon-inline">.buildpacks</span>  file, because then it's checked into git. In your project root run <pre class="lang:default decode:true">echo "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz" >> .buildpacks</pre>
-    
-    which should create a <span class="lang:default decode:true crayon-inline ">.buildpacks</span> file with the buildpack URL inside. If the file already existed the buildpack URL should be added to the bottom.</li> 
-    
+
+    which should create a <span class="lang:default decode:true crayon-inline ">.buildpacks</span> file with the buildpack URL inside. If the file already existed the buildpack URL should be added to the bottom.</li>
+
       * Commit your <span class="lang:default decode:true crayon-inline ">.buildpacks</span>  file <pre class="lang:default decode:true">git add .
 git commit -m "Add .buildpacks with ember buildpack"</pre>
-    
+
       * The last step is to tell our project where to deploy. Dokku follows the Heroku-easy model of just <span class="lang:default decode:true crayon-inline">git push</span> . So we will add our dokku digital ocean droplet by adding it to our git remotes by running <pre class="lang:default decode:true">git remote add dokku dokku@your.ip.address:ember</pre>
-        
+
         With "your.ip.address" being your digital ocean droplet's IP address. Note: The user for the push is dokku, not root. After the IP address is a ":project-name", in our case it is "ember". So if you're curious the breakdown is:
-        
+
         <pre class="lang:default decode:true">git remote add [git-remote-name] dokku@[ip-address]:[dokku-app-name]</pre>
-    
+
       * The last step is to deploy, run <pre class="lang:default decode:true">git push dokku master</pre>
-        
+
         You should see lots of scrolling text and after a 3-4 minutes you should see one of the last lines say.
-        
+
         <pre class="lang:default decode:true">=====> Application deployed:
        http://your.ip.address:16523</pre>
-        
-        Again, with "your.ip.address" being your droplet's IP address.  
-<img class="alignnone size-full wp-image-264" src="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png" alt="Screen Shot 2017-04-18 at 8.09.08 AM" width="1020" height="893" srcset="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png 1020w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-300x263.png 300w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-768x672.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" />  
-        and there it is, we can see in the markup that we have an Ember application with our production build fingerprinted .js files.</li> </ol> 
-        
+
+        Again, with "your.ip.address" being your droplet's IP address.
+<img class="alignnone size-full wp-image-264" src="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png" alt="Screen Shot 2017-04-18 at 8.09.08 AM" width="1020" height="893" srcset="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png 1020w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-300x263.png 300w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-768x672.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" />
+        and there it is, we can see in the markup that we have an Ember application with our production build fingerprinted .js files.</li> </ol>
+
         ## Bonus steps
-        
+
         Who wants to remember a random port number? Not me. So let's go ahead and swap that for something we can choose. Login to your droplet via ssh.
-        
+
         If we wanted to access it on port 80 we would do:
-        
+
         <pre class="lang:default decode:true">dokku config:set ember DOKKU_NGINX_PORT=80
 dokku config:set ember DOKKU_PROXY_PORT_MAP=http:80:5000</pre>
-        
+
         Each command will reconfigure the nginx, and after the second command you should be able to access the application at the given port.
-        
+
         ## That's all folks
-        
+
         And that's it. Hopefully you were able to get your Ember application deployed. There are probably some easier solutions, like just using Heroku itself, but it's nice to know that there are options if you're on a budget. Also, this can scale with you for other projects across other platforms and help introduce you to the world of Docker. You can access any of the running containers that Dokku sets up for you which is pretty neat and great if you absolutely need to tail some logs or access the environment directly for debugging.
-        
+
         ## Thanks
-        
+
         Thanks to the developers at dokku, herokuish, heroku, and ember-cli-deploy. This was made pretty easy thanks to the work done by people from these projects. ✌🏽❤️

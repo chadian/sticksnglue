@@ -2,10 +2,6 @@
 id: 250
 title: 'Ember PSA: modules and scopes'
 date: 2017-04-12T01:21:02+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=250
-permalink: /ember-psa-modules-and-scopes/
 categories:
   - 'Bugs & Fixes'
   - Learning

@@ -2,12 +2,6 @@
 id: 209
 title: Raspberry Pi wifi sleep issue with Edimax EW-7811Un
 date: 2015-08-30T03:51:51+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=209
-permalink: /raspberry-pi-wifi-sleep-issue-with-edimax-ew-7811un/
-sfw_pwd:
-  - OGMxpcf9oJpQ
 categories:
   - 'Bugs & Fixes'
 tags:

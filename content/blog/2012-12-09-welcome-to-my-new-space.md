@@ -2,12 +2,6 @@
 id: 8
 title: Welcome to my new space.
 date: 2012-12-09T21:49:06+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=8
-permalink: /welcome-to-my-new-space/
-sfw_pwd:
-  - KJNtYgkNFUXC
 categories:
   - Blurbs
 ---

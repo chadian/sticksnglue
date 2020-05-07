@@ -2,10 +2,6 @@
 id: 221
 title: Monolithic docker containers for local development environments
 date: 2015-10-02T15:09:19+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=221
-permalink: /monolith-docker-containers-for-local-development-environments/
 categories:
   - Learning
   - Tools

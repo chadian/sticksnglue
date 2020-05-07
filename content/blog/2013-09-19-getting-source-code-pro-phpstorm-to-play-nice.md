@@ -2,12 +2,6 @@
 id: 108
 title: 'Getting Source Code Pro & PhpStorm to play nice'
 date: 2013-09-19T14:04:18+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=108
-permalink: /getting-source-code-pro-phpstorm-to-play-nice/
-sfw_pwd:
-  - jCwyXwVNj6OM
 categories:
   - 'Bugs & Fixes'
   - Tools

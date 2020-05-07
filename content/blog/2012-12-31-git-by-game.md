@@ -2,12 +2,6 @@
 id: 23
 title: Git by game
 date: 2012-12-31T23:40:36+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=23
-permalink: /git-by-game/
-sfw_pwd:
-  - scSelqZ9GMSa
 categories:
   - Learning
 ---

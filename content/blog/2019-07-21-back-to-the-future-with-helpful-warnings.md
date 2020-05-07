@@ -2,10 +2,6 @@
 id: 297
 title: Back to the Future with helpful warnings
 date: 2019-07-21T02:24:41+00:00
-author: chadcarbert
-layout: post
-guid: http://www.sticksnglue.com/?p=297
-permalink: /back-to-the-future-with-helpful-warnings/
 categories:
   - Tools
 ---

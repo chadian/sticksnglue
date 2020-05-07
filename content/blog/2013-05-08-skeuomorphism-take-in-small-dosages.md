@@ -2,13 +2,6 @@
 id: 54
 title: Skeuomorphism, take in small dosages.
 date: 2013-05-08T05:49:07+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=54
-permalink: /skeuomorphism-take-in-small-dosages/
-sfw_pwd:
-  - IPDoCyBWKT0F
-image: /wordpress/../uploads/2013/05/leather_new8.jpg
 categories:
   - Design
 tags:

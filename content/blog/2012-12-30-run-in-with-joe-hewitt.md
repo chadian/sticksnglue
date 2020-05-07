@@ -2,12 +2,6 @@
 id: 16
 title: Run in with Joe Hewitt
 date: 2012-12-30T02:45:46+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=16
-permalink: /run-in-with-joe-hewitt/
-sfw_pwd:
-  - e5CI2FdD5Nb8
 categories:
   - Tales
 ---

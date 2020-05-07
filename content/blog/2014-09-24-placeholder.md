@@ -2,13 +2,6 @@
 id: 179
 title: Placeholder
 date: 2014-09-24T21:51:37+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=179
-permalink: /placeholder/
-sfw_pwd:
-  - E60h3IMVUKBx
-image: /wordpress/../uploads/2014/09/placeholder-624x141.jpg
 categories:
   - Projects
   - Tools
@@ -24,13 +17,13 @@ Placeholder images are easy enough for the designers who build things in photosh
 
 I can foresee a few problems with these services:
 
-  1. They load from an online resource.  
+  1. They load from an online resource.
     _We aren't always connected to be able to pull these dynamically created assets_
-  2. The image is available offline as a physical asset, but requires setup and referencing a file in markup.  
+  2. The image is available offline as a physical asset, but requires setup and referencing a file in markup.
     _I have to save the file, add it to the web directory, then jump back to my editor and reference the file in-line, track the physical file in source control, etc. Create a placeholder should be fast._
-  3. We are left with pixel dimensions.  
+  3. We are left with pixel dimensions.
     _We won't always know how we want the image to fill the space, and often it won't be confined to specific width and heigh pixels. Why get hung up on dimensions when you can just get something that symbolizes a placeholder, and represents what you do know about your layout (a width/height ratio, width/height percentages, etc)._
-  4. It's an image.  
+  4. It's an image.
     _We don't need an image, we need a placeholder that represents an image. Images bring with it baggage that we aren't ready for, we can do more and still get the idea of the image._
 To address these issues I have come up with a side-project that I am calling, for lack of a better name, _placeholder_. You can check it out on [github](https://github.com/chadian/placeholder "Github - Placeholder").
 

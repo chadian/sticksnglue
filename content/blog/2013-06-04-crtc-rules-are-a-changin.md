@@ -2,18 +2,6 @@
 id: 80
 title: 'CRTC Rules are A-Changin'
 date: 2013-06-04T05:20:06+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=80
-permalink: /crtc-rules-are-a-changin/
-geo_latitude:
-  - "53.518365"
-geo_longitude:
-  - "-113.511058"
-geo_public:
-  - "1"
-sfw_pwd:
-  - IPIzaYFbOlom
 categories:
   - Blurbs
 tags:

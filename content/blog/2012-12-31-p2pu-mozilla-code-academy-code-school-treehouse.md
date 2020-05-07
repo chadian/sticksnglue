@@ -2,12 +2,6 @@
 id: 20
 title: 'P2PU, Mozilla, Code Academy, Code School, Treehouse, ...'
 date: 2012-12-31T22:34:18+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=20
-permalink: /p2pu-mozilla-code-academy-code-school-treehouse/
-sfw_pwd:
-  - oeboilX9OOof
 categories:
   - Blurbs
   - Learning

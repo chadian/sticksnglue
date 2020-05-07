@@ -2,14 +2,6 @@
 id: 155
 title: Setting up the Best AirPlay Speakers (with Shairport and Raspberry Pi)
 date: 2013-12-03T03:54:34+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=155
-permalink: /setting-up-the-best-airplay-speakers-with-shairport-and-raspberry-pi/
-sfw_pwd:
-  - nB83C5L8bVZW
-categories:
-  - Uncategorized
 ---
 A plan that had started nearly a year ago is finally starting to see fruition (haha). My Raspberry Pi journey has been fun and you definitely end up learning a thing or two along the way, this isn't your ordinary linux box/virtual machine.
 

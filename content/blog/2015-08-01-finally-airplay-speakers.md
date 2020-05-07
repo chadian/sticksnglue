@@ -2,12 +2,6 @@
 id: 205
 title: Finally, AirPlay Speakers
 date: 2015-08-01T07:27:01+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=205
-permalink: /finally-airplay-speakers/
-sfw_pwd:
-  - teqOAfoZMaTp
 categories:
   - Learning
   - Projects

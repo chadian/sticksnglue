@@ -2,12 +2,6 @@
 id: 69
 title: Yahoo acquiring another chunk of the internet
 date: 2013-05-21T13:26:24+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=69
-permalink: /yahoo-acquiring-another-chunk-of-the-internet/
-sfw_pwd:
-  - AHAui3TlS1Bb
 categories:
   - Blurbs
 tags:

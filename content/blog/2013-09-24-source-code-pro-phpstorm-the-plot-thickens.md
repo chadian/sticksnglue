@@ -2,12 +2,6 @@
 id: 112
 title: 'Source Code Pro & PhpStorm, the plot thickens'
 date: 2013-09-24T04:29:52+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=112
-permalink: /source-code-pro-phpstorm-the-plot-thickens/
-sfw_pwd:
-  - cnCLiIRb7VZW
 categories:
   - 'Bugs & Fixes'
   - Tools

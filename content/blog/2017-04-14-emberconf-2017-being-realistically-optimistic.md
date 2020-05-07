@@ -2,10 +2,6 @@
 id: 253
 title: EmberConf 2017, being realistically optimistic
 date: 2017-04-14T01:05:11+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=253
-permalink: /emberconf-2017-being-realistically-optimistic/
 categories:
   - Blurbs
   - Tools

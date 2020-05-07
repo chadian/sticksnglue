@@ -2,10 +2,6 @@
 id: 224
 title: 'Getting a handle on Embers templating and rendering story'
 date: 2015-10-04T04:01:35+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=224
-permalink: /getting-a-handle-on-embers-templating-and-rendering-story/
 categories:
   - Learning
 tags:

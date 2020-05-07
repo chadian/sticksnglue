@@ -2,15 +2,6 @@
 id: 131
 title: Drupal Camp Alberta 2013
 date: 2013-10-12T04:40:51+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=131
-permalink: /drupal-camp-alberta-2013/
-sfw_pwd:
-  - xGyk26tK4oTR
-image: /wordpress/../uploads/2013/10/drupal-camp-blog-post.jpg
-categories:
-  - Uncategorized
 ---
 So about three weeks ago I had the privilege to attend [Drupal Camp Alberta](http://drupalcampalberta.org "Drupal Camp Alberta"). This year the the guys from [Hybrid Forge](http://www.hybridforge.com "Hybrid Forge") (where I work!), organized and sponsored it. I really appreciated the hard work they put into making it a high calibre, and fun, and from the sounds of it others had a really great time, too. And it was in Banff! How could you not?! Looking out of the conference rooms to a wall full of glass, opening up into a valley of the Rocky Mountains, even deer were strolling down on the grass below.
 

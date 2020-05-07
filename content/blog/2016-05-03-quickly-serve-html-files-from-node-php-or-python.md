@@ -2,10 +2,6 @@
 id: 244
 title: Quickly serve html files from node, php, or python
 date: 2016-05-03T23:48:21+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=244
-permalink: /quickly-serve-html-files-from-node-php-or-python/
 categories:
   - Tools
 ---

@@ -2,10 +2,6 @@
 id: 228
 title: A future without boot2docker, featuring Docker Machine
 date: 2015-10-04T22:54:36+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=228
-permalink: /a-future-without-boot2docker-featuring-docker-machine/
 categories:
   - Learning
   - Tools

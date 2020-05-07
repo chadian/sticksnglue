@@ -2,12 +2,6 @@
 id: 202
 title: Callback currying, and futures (or a preface to Promises)
 date: 2015-05-11T03:44:32+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=202
-permalink: /callback-currying-and-futures-or-a-preface-to-promises/
-sfw_pwd:
-  - jvwkRI9KX34G
 categories:
   - Learning
 tags:

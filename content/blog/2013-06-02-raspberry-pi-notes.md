@@ -2,12 +2,6 @@
 id: 77
 title: Raspberry Pi Notes
 date: 2013-06-02T19:05:58+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=77
-permalink: /raspberry-pi-notes/
-sfw_pwd:
-  - tdgui8WCq3D3
 categories:
   - Learning
   - Projects

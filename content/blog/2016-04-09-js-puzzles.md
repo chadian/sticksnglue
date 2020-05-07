@@ -2,10 +2,6 @@
 id: 239
 title: js puzzle
 date: 2016-04-09T23:12:37+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=239
-permalink: /js-puzzles/
 categories:
   - Learning
 tags:
@@ -13,7 +9,7 @@ tags:
 ---
 I came across a [tweet](https://twitter.com/weitzelb/status/718623065480019968) that had this bit of puzzling sample code:
 
-<img class="alignnone size-full wp-image-240" src="/wordpress/2016/04/weitzelb_2016-Apr-08.jpg" alt="js puzzle" width="238" height="397" srcset="/wordpress/2016/04/weitzelb_2016-Apr-08.jpg 238w, /wordpress/2016/04/weitzelb_2016-Apr-08-180x300.jpg 180w" sizes="(max-width: 238px) 100vw, 238px" /> 
+<img class="alignnone size-full wp-image-240" src="/wordpress/2016/04/weitzelb_2016-Apr-08.jpg" alt="js puzzle" width="238" height="397" srcset="/wordpress/2016/04/weitzelb_2016-Apr-08.jpg 238w, /wordpress/2016/04/weitzelb_2016-Apr-08-180x300.jpg 180w" sizes="(max-width: 238px) 100vw, 238px" />
 
 Most of this made sense to me, except for the part of the properties being assigned and then either accessible or being undefined. I had a hunch that it was related to something I blogged about [previously](http://sticksnglue.com/be-careful-with-those-primitives-types/).
 

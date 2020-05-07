@@ -2,10 +2,6 @@
 id: 272
 title: Scaling CSS with mixin-backed class names
 date: 2018-08-24T23:36:29+00:00
-author: chadcarbert
-layout: post
-guid: http://www.sticksnglue.com/?p=272
-permalink: /scaling-css-with-the-mixin-backed-class-name/
 categories:
   - Blurbs
 ---
@@ -131,9 +127,9 @@ and this generates a few conflicting properties:<code class="language-css" lang=
 <pre class="lang:css decode:true">.landing-page-button {
 	/* from main-button */
     background-color: red;
-	color: red; 
+	color: red;
 	/* ... other main-button styles we want ...*/
-    
+
     /* from special-button */
     background-color: blue;
     color: blue;
@@ -145,7 +141,7 @@ We are left with a mash of these two mixins, and for the most part is what exact
 <pre class="lang:sass decode:true">.landing-page-button {
 	@include main-button;
 	@include special-button;
-	
+
 	// resolutions
 	background-color: red;
 	color: blue;
@@ -156,14 +152,14 @@ Now you've explicitly resolved how you want the `landing-page-button` to look. M
 <pre class="lang:css decode:true">.landing-page-button {
 	/* from main-button */
     background-color: red;
-	color: red; 
+	color: red;
 	/* ... other main-button styles we want ...*/
-    
+
     /* from special-button */
     background-color: blue;
     color: blue;
 	/* ... other special-button styles we want ...*/
-	
+
 	/* resolutions */
 	background-color: red;
 	color: blue;

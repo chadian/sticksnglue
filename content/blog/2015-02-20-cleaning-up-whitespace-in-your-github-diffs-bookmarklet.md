@@ -2,12 +2,6 @@
 id: 192
 title: 'Cleaning Up Whitespace in your Github Diffs [Bookmarklet]'
 date: 2015-02-20T04:06:24+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=192
-permalink: /cleaning-up-whitespace-in-your-github-diffs-bookmarklet/
-sfw_pwd:
-  - hjL8iu4D6lPz
 categories:
   - Tools
 ---

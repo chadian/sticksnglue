@@ -2,11 +2,6 @@
 id: 232
 title: 'Javascript: The Good Parts'
 date: 2016-01-08T00:56:39+00:00
-author: chadcarbert
-layout: post
-guid: http://sticksnglue.com/wordpress/?p=232
-permalink: /javascript-the-good-parts/
-image: /wordpress/../uploads/2016/01/javascript-good-parts-624x820.jpg
 categories:
   - Learning
 tags:
