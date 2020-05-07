@@ -45,6 +45,6 @@ Also, on top of creating these placeholders there are different styling helpers 
 
 The biggest benefits of doing it this way is that you are doing everything in code and it's tracked in source control, it's fast to bring in, it's flexible in definition of the placeholder, and it can become part of the process that you and your team use to consistently create and use placeholders.
 
-I still have features I want to add, and features that need to be documented. If you feel like it's a good idea give the project a 'star' on [github](http://sticksnglue.com/placeholder/ "Placeholder"), fork it, or just give it a try and give your feedback. I will continue to develop the idea further and smooth out any kinks.
+I still have features I want to add, and features that need to be documented. If you feel like it's a good idea give the project a 'star' on [github](https://github.com/chadian/placeholder "Placeholder"), fork it, or just give it a try and give your feedback. I will continue to develop the idea further and smooth out any kinks.
 
 Thanks for taking a look!
