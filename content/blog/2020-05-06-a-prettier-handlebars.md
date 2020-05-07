@@ -1,7 +1,7 @@
 ---
 id: 26
 title: A Prettier Handlebars
-date: 2013-04-23T03:56:04+00:00
+date: 2020-05-07T12:35:04+00:00
 categories:
   - Tools
   - Learning
