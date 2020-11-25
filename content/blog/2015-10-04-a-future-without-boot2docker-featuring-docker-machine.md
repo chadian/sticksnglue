@@ -10,6 +10,7 @@ tags:
   - docker
   - docker machine
 ---
+
 Docker has always had a few unofficial documented steps to getting things going on non-linunx environments. It usually went along the lines that if you weren't on linux, get linux. This is understandable as docker is using [LXC](https://en.wikipedia.org/wiki/LXC) behind the scenes, and that requires linux. A lot of web developers are using Apple hardware with OSX, like myself, and probably felt like it was a little more setup than necessary. Projects like [boot2docker](http://boot2docker.io/) made this way easier but that only solved setting up a docker host, or engine, for windows and Mac OS X. What about all those cloud providers? Pre-built images offered by Digital Ocean, etc...
 
 Luckily Docker saw this challenge and abstracted a way to easily setup, from the client. a way to setup any docker engine. It's called [Docker Machine](https://docs.docker.com/machine/). They even provide [migration steps](https://docs.docker.com/machine/migrate-to-machine/) for the boot2docker folk. Now we have an official resource that will work in tandem with docker's future plans.
@@ -52,4 +53,4 @@ Docker-machine makes setting up the your docker client easy by:
 
 With all this setup, you should be able to type <span class="lang:default decode:true crayon-inline ">docker info</span> and see all the information your local docker client has about what its current docker engine. At this point you're free to use the <span class="lang:default decode:true crayon-inline ">docker</span> command and have fun with containerizing your apps.
 
-Hope this made the Mac OS X with Docker setup a little clearer and easier, and provided a _homebrew way_ of setting things up. If anything didn't make sense, or if I need to fix something please let me know! Thanks and Happy Dockering!
+Hope this made the Mac OS X with Docker setup a little clearer and easier, and provided a *homebrew way* of setting things up. If anything didn't make sense, or if I need to fix something please let me know! Thanks and Happy Dockering!

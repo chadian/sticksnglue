@@ -5,6 +5,7 @@ date: 2019-07-21T02:24:41+00:00
 categories:
   - Tools
 ---
+
 <p class="md-end-block md-p md-focus">
   <span class="md-plain md-expand">Let's imagine you're writing some code and you're caught between over-engineering a solution and implementing something that you can foresee will eventually run its course. Sandi Metz has taught us:</span>
 </p>

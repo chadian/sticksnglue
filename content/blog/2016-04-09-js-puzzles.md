@@ -7,6 +7,7 @@ categories:
 tags:
   - javascript
 ---
+
 I came across a [tweet](https://twitter.com/weitzelb/status/718623065480019968) that had this bit of puzzling sample code:
 
 <img class="alignnone size-full wp-image-240" src="/wordpress/2016/04/weitzelb_2016-Apr-08.jpg" alt="js puzzle" width="238" height="397" srcset="/wordpress/2016/04/weitzelb_2016-Apr-08.jpg 238w, /wordpress/2016/04/weitzelb_2016-Apr-08-180x300.jpg 180w" sizes="(max-width: 238px) 100vw, 238px" />

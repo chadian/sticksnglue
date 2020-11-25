@@ -1,6 +1,6 @@
 ---
 id: 139
-title: 'Working with ZIP Code Data & MySQL'
+title: "Working with ZIP Code Data & MySQL"
 date: 2013-11-06T14:07:18+00:00
 categories:
   - Learning
@@ -10,6 +10,7 @@ tags:
   - mysql
   - zip code
 ---
+
 I'm working on a project currently where I need to be able to use zip code data, in relation to their longitude and latitude coordinates. I found what I felt was a <a title="Zip Code Data Download" href="http://www.boutell.com/zipcodes/" target="_blank">half decent source of the data</a>. The download file listed at the top says it includes CSV and SQL but I found the SQL implementation to not be quite what I was looking for, at least for MySQL.
 
 **At the bottom of this post you will find the download of the MySQL formatted zip codes.**

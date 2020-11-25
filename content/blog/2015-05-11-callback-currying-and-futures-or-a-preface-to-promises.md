@@ -9,6 +9,7 @@ tags:
   - javascript
   - promises
 ---
+
 I have been diving into the different patterns that can be used to organize functional code. One pattern being \`curry\`, a nod to Haskell Curry, that arises from the need of generating a function that has one, or more, of its parameters already setup. I was looking for some good examples in javascript logic where this is applied and came across this [blog post](https://bjouhier.wordpress.com/2011/04/04/currying-the-callback-or-the-essence-of-futures/ "Currying the callback, or the essence of futures…"), and I saw a really interesting pattern at the section "Currying the callback":
 
 <pre class="lang:default decode:true">function future(fn, args, i) {

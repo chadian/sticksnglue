@@ -1,14 +1,15 @@
 ---
 id: 20
-title: 'P2PU, Mozilla, Code Academy, Code School, Treehouse, ...'
+title: "P2PU, Mozilla, Code Academy, Code School, Treehouse, ..."
 date: 2012-12-31T22:34:18+00:00
 categories:
   - Blurbs
   - Learning
 ---
+
 ... did I miss one? Probably a few.
 
-I'm very interested in how online education will work as many valuable skills can be taught through tutorials and having general curiosity these days. I've decided to try some of the [P2PU.org](http://p2pu.org) _School of Webcraft_ courses as they are free and were made in partnership with Mozilla. How these online schools organize the instruction and lessons, motivate students, and help industries recognize the skill by proper validation, are just a few challenges that I see. I have read some blog posts that see 'badges', these virtual rewards, as commoditization of learning. I think with or without badges natural learning and curiosity will prevail and will still ultimately send people the furthest on their path.
+I'm very interested in how online education will work as many valuable skills can be taught through tutorials and having general curiosity these days. I've decided to try some of the [P2PU.org](http://p2pu.org) *School of Webcraft* courses as they are free and were made in partnership with Mozilla. How these online schools organize the instruction and lessons, motivate students, and help industries recognize the skill by proper validation, are just a few challenges that I see. I have read some blog posts that see 'badges', these virtual rewards, as commoditization of learning. I think with or without badges natural learning and curiosity will prevail and will still ultimately send people the furthest on their path.
 
 With respects to technical skills, I have found the most of my learning has come from staking a claim in something and then trying to see it through with google, stackoverflow, trial and error, etc. When things are clear, tools laid in front of you, the dotted path marked, it might remove some of the critical thinking involved when tackling larger systems and bigger problems. I hope that these schools can leave some things open ended enough to familiarize themselves with the creative and imaginative aspects, too. Technology is often a mystery that can be discovered iteratively, layer by layer, and it seems that by design it is perfect for natural learning.
 

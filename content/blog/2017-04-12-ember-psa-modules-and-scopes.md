@@ -1,14 +1,15 @@
 ---
 id: 250
-title: 'Ember PSA: modules and scopes'
+title: "Ember PSA: modules and scopes"
 date: 2017-04-12T01:21:02+00:00
 categories:
-  - 'Bugs & Fixes'
+  - "Bugs & Fixes"
   - Learning
 tags:
   - emberjs
   - javascript
 ---
+
 I could have saved an hour of head scratching had I kept in mind a few basic principles. Hopefully this lesson of modules and shared scope will save someone else in the future.
 
 Within Ember we get used to creating modules and exporting these object definitions.

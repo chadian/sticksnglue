@@ -1,12 +1,13 @@
 ---
 id: 232
-title: 'Javascript: The Good Parts'
+title: "Javascript: The Good Parts"
 date: 2016-01-08T00:56:39+00:00
 categories:
   - Learning
 tags:
   - javascript
 ---
+
 It's been several months since I read [Javascript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do) but I thought it was worth mentioning that this old classic is an excellent read. It also takes offers a more traditional look at javascript, which is important in understanding why certain changes are being made today.
 
 We are really quite lucky that things like package managers, module loaders, and javascript features have matured to the point where they are being standardized, and browsers are iterating (as well as the spec) at a rate that is making the language more of a pleasure to use. There are things that are also being added that are difficult or impossible to polyfill like [WeakMap](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) and [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), that will be fun to play with. Crawford's follow-up coverage "The Better Parts" I think is best shown at the Nordic.js 2014 conference, check it out:

@@ -1,11 +1,12 @@
 ---
 id: 108
-title: 'Getting Source Code Pro & PhpStorm to play nice'
+title: "Getting Source Code Pro & PhpStorm to play nice"
 date: 2013-09-19T14:04:18+00:00
 categories:
-  - 'Bugs & Fixes'
+  - "Bugs & Fixes"
   - Tools
 ---
+
 **Update**, turns out there's more to it when it comes to getting PhpStorm to render fonts. My [follow up post explains](http://sticksnglue.com/?p=112 "Source Code Pro & PhpStorm, the plot thickens") how to get fonts rendering properly.
 
 Lately, I've been diving into heavier frameworks and have started to to use PhpStorm more. When setting up my IDE environment I noticed I was missing my favorite coding font, Source Code Pro. I went into the Preferences, Editor > Colors & Fonts > Font, and tried to select Source Code Pro. This caused some issues where it was unable to render bold, and italics and instead left everything in a jumbled mess.

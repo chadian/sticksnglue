@@ -1,11 +1,12 @@
 ---
 id: 112
-title: 'Source Code Pro & PhpStorm, the plot thickens'
+title: "Source Code Pro & PhpStorm, the plot thickens"
 date: 2013-09-24T04:29:52+00:00
 categories:
-  - 'Bugs & Fixes'
+  - "Bugs & Fixes"
   - Tools
 ---
+
 Alright, so I thought everything was all set in my [last post](http://sticksnglue.com/?p=108 "Getting Source Code Pro & PhpStorm to play nice"), however it turns out PhpStorm, Java and font rendering have a bit more issues.
 
 **UPDATE: **The following fix also works for adding the various font weights that come with Source Code Pro (see bottom for screenshot).
@@ -22,11 +23,11 @@ It turns out that for things to work out it's <strong style="line-height: 1.7142
 
 I say make up an Italics version because with Mac OS X (and maybe Windows?) the operating system has the option of coming up rendering faux bold and italics versions of fonts. This works fine in Sublime Text but for PhpStorm the fonts have to be dropped in another folder.
 
-**The _real_ fix**
+**The *real* fix**
 
 The answer is you must store these fonts in your Java home's font folder. To find this out open terminal on your mac and type:
 
-/usr/libexec/java\_home  or echo $JAVA\_HOME
+/usr/libexec/java_home  or echo \$JAVA_HOME
 
 One of these two commands, most likely the first one, will return a directory path (**Update**: If this doesn't work for you, check out  [this StackOverflow post](http://stackoverflow.com/q/6588390/200145 "StackOverflow - Mac OS X & Java Home") as suggested by Emanuil in comments, thanks Emanuil!). Go to this directory path, then proceed to go to 'lib', then 'fonts' folder. In the case of my machine, the command returned /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/ and then I navigated to the containing lib/fonts directory ending up at /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/fonts
 

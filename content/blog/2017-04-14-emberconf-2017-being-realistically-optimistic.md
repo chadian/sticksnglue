@@ -8,6 +8,7 @@ categories:
 tags:
   - emberjs
 ---
+
 _Update: While drafting this post over the last couple of weeks [EmberConf 2017: State of the Union](https://emberjs.com/blog/2017/04/05/emberconf-2017-state-of-the-union.html) has been posted on the Ember Blog. It provides better context so go read that first._
 
 I discovered Ember early on in the fabled times before ember-cli. Those were the days of globals, views, and lots of googling. As I've grown in my career I've carefully watched as Ember has risen to a slew of new challenges we've seen on the web, and quite successfully.

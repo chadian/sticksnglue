@@ -1,4 +1,5 @@
 # sticksnglue
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6f9919df-7567-45da-9b07-4c6628e73c15/deploy-status)](https://app.netlify.com/sites/objective-mirzakhani-3fd576/deploys)
 
 This is my blog focused mostly on topics around web development

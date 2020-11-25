@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "../../content/assets/scss/theme.scss";
+import "../../content/assets/scss/theme.scss"
 
 class Layout extends React.Component {
   render() {
@@ -20,9 +20,7 @@ class Layout extends React.Component {
           </header>
         </div>
 
-        <div className="page-container">
-          {children}
-        </div>
+        <div className="page-container">{children}</div>
       </>
     )
   }

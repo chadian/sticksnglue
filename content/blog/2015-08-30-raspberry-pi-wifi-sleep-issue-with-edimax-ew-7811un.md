@@ -3,10 +3,11 @@ id: 209
 title: Raspberry Pi wifi sleep issue with Edimax EW-7811Un
 date: 2015-08-30T03:51:51+00:00
 categories:
-  - 'Bugs & Fixes'
+  - "Bugs & Fixes"
 tags:
   - raspberry pi
 ---
+
 Although I have been reasonably happy with my current [airplay speaker setup](http://sticksnglue.com/finally-airplay-speakers/) I ran into some issues where I couldn't find the airplay speakers listed. I also couldn't <span class="lang:sh decode:true crayon-inline">ssh</span> in, and on the pi directly <span class="lang:sh decode:true crayon-inline">ifconfig</span> wasn't reporting an IP address either. I found myself having to continually run <span class="lang:sh decode:true crayon-inline">ifconfig wlan0 up</span>.
 
 Turns out the Edimax EW-7811Un wifi adapter on Raspbian has an issue with very conservative power management. A quick google search turned up this [forum post](https://www.raspberrypi.org/forums/viewtopic.php?t=61665) that worked me.

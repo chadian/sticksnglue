@@ -1,14 +1,15 @@
 ---
 id: 294
-title: 'Empathy & Diversity, ingredients for a better web'
+title: "Empathy & Diversity, ingredients for a better web"
 date: 2019-07-13T04:21:42+00:00
 categories:
   - Learning
   - Tales
 ---
+
 <span class="md-plain md-expand">What follows is a description of my experience teaching </span><span class=""><em><span class="md-plain">Introduction to Javascript</span></em></span> <span class="md-plain">at the ReDI school in Berlin.</span>
 
-* * *
+---
 
 <p class="md-end-block md-p">
   <span class="md-plain">My grandparents traveled across 4 continents, the last 3 with my mother and her siblings, to finally call Canada home. That story of immigration is something that I have always been curious about growing up. As countries around the world continue to debate the role of immigration, and immigrants, I've wondered if at some point on my family's journey, if things had been different, what would their outcome have been. I feel lucky to have grown up in Canada, largely unaware of the ultimate effort made by many to call it home.</span>

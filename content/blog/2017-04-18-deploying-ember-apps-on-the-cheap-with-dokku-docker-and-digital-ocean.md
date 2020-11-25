@@ -6,6 +6,7 @@ categories:
   - Projects
   - Tools
 ---
+
 ## The rough idea
 
 With Ember we are spoiled with an excellent \`ember-cli-deploy\` tool. Need to deploy somewhere, you can go shopping for many of the supported deploy plugins. One company that has made deployment dead simple is Heroku. When I was looking to show off some local Ember apps I wanted something cheap and easy to setup. Heroku would be nice but I think we could go cheaper.
@@ -22,6 +23,7 @@ With this rough outline let's get started.
 Feel free to skip this step if you've already got an ember project.
 
 We'll use a stock ember project.
+
 1. Go into a fresh folder, and run <span class="lang:default decode:true crayon-inline ">ember init</span>
 2. Let's make sure we're tracking this in a git repo, run <span class="lang:default decode:true crayon-inline">git init</span>
 3. Let's commit the empty ember project:
@@ -33,17 +35,17 @@ git commit -m "Init ember project"</pre>
 
 Now let's get your Dokku digital ocean droplet going.
 
-  1. Login to Digital Ocean.
-  2. Click 'create droplet'.
-  3. Click the "One-click apps" tab.
-<img class="alignnone size-full wp-image-258" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png" alt="ScreenShot2017-04-17at11.47.02AM" width="347" height="203" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png 347w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM-300x176.png 300w" sizes="(max-width: 347px) 100vw, 347px" />
-  4. Choose Dokku 0.8.0 on 16.04
-<img class="alignnone size-full wp-image-257" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png" alt="ScreenShot2017-04-17at11.46.50AM" width="328" height="60" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png 328w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM-300x55.png 300w" sizes="(max-width: 328px) 100vw, 328px" />
-  5. Choose a size at $5/mo (let's keep this cheap!)
-  6. Pick your preferred region
-  7. Add your ssh keys if you got them, it'll make ssh'ing in easier.
-  8. Pick 1 droplet, and pick a hostname if you like.
-  9. That's it! Click "Create"
+1. Login to Digital Ocean.
+2. Click 'create droplet'.
+3. Click the "One-click apps" tab.
+   <img class="alignnone size-full wp-image-258" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png" alt="ScreenShot2017-04-17at11.47.02AM" width="347" height="203" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM.png 347w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.47.0220AM-300x176.png 300w" sizes="(max-width: 347px) 100vw, 347px" />
+4. Choose Dokku 0.8.0 on 16.04
+   <img class="alignnone size-full wp-image-257" src="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png" alt="ScreenShot2017-04-17at11.46.50AM" width="328" height="60" srcset="/wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM.png 328w, /wordpress/2017/04/Screen20Shot202017-04-1720at2011.46.5020AM-300x55.png 300w" sizes="(max-width: 328px) 100vw, 328px" />
+5. Choose a size at \$5/mo (let's keep this cheap!)
+6. Pick your preferred region
+7. Add your ssh keys if you got them, it'll make ssh'ing in easier.
+8. Pick 1 droplet, and pick a hostname if you like.
+9. That's it! Click "Create"
 
 Under Droplets, check that your droplet is being created.
 
@@ -139,16 +141,18 @@ Creating ember... done</pre>
 
 This is kind of the cool part. Because dokku can be treated like Heroku we can use the wonderful work the people at Heroku have done.
 
-  1. First, let's install ember-cli-deploy by running <span class="lang:default decode:true crayon-inline">ember install ember-cli-deploy</span> .
-  2. Now install ember-cli-deploy-build by running <span class="lang:default decode:true crayon-inline">ember install ember-cli-deploy-build</span> . This is the basic build plugin that takes care of the build process upon deployment.
-  3. <span class="lang:default decode:true crayon-inline ">package.json</span>  will have been modified and <span class="lang:default decode:true crayon-inline ">config/deploy.js</span>  added. Let's commit these files. <pre class="lang:default decode:true">git add .
-git commit -m "Add ember-cli-deploy and build plugin"</pre>
+1. First, let's install ember-cli-deploy by running <span class="lang:default decode:true crayon-inline">ember install ember-cli-deploy</span> .
+2. Now install ember-cli-deploy-build by running <span class="lang:default decode:true crayon-inline">ember install ember-cli-deploy-build</span> . This is the basic build plugin that takes care of the build process upon deployment.
+3. <span class="lang:default decode:true crayon-inline ">package.json</span>  will have been modified and <span class="lang:default decode:true crayon-inline ">config/deploy.js</span>  added. Let's commit these files. <pre class="lang:default decode:true">git add .
+   git commit -m "Add ember-cli-deploy and build plugin"</pre>
 
-  4. Dokku tries to do its best to automatically determine the heroku buildpack for a given application but given ours is Ember it needs a bit more setup than a regular node app. There are many different ways to specify the buildpack for an app with Dokku but I prefer setting the <span class="lang:default decode:true crayon-inline">.buildpacks</span>  file, because then it's checked into git. In your project root run <pre class="lang:default decode:true">echo "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz" >> .buildpacks</pre>
+4. Dokku tries to do its best to automatically determine the heroku buildpack for a given application but given ours is Ember it needs a bit more setup than a regular node app. There are many different ways to specify the buildpack for an app with Dokku but I prefer setting the <span class="lang:default decode:true crayon-inline">.buildpacks</span>  file, because then it's checked into git. In your project root run <pre class="lang:default decode:true">echo "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz" >> .buildpacks</pre>
+
 
     which should create a <span class="lang:default decode:true crayon-inline ">.buildpacks</span> file with the buildpack URL inside. If the file already existed the buildpack URL should be added to the bottom.</li>
 
       * Commit your <span class="lang:default decode:true crayon-inline ">.buildpacks</span>  file <pre class="lang:default decode:true">git add .
+
 git commit -m "Add .buildpacks with ember buildpack"</pre>
 
       * The last step is to tell our project where to deploy. Dokku follows the Heroku-easy model of just <span class="lang:default decode:true crayon-inline">git push</span> . So we will add our dokku digital ocean droplet by adding it to our git remotes by running <pre class="lang:default decode:true">git remote add dokku dokku@your.ip.address:ember</pre>
@@ -165,6 +169,7 @@ git commit -m "Add .buildpacks with ember buildpack"</pre>
        http://your.ip.address:16523</pre>
 
         Again, with "your.ip.address" being your droplet's IP address.
+
 <img class="alignnone size-full wp-image-264" src="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png" alt="Screen Shot 2017-04-18 at 8.09.08 AM" width="1020" height="893" srcset="/wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM.png 1020w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-300x263.png 300w, /wordpress/2017/04/Screen-Shot-2017-04-18-at-8.09.08-AM-768x672.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" />
         and there it is, we can see in the markup that we have an Ember application with our production build fingerprinted .js files.</li> </ol>
 
@@ -175,6 +180,7 @@ git commit -m "Add .buildpacks with ember buildpack"</pre>
         If we wanted to access it on port 80 we would do:
 
         <pre class="lang:default decode:true">dokku config:set ember DOKKU_NGINX_PORT=80
+
 dokku config:set ember DOKKU_PROXY_PORT_MAP=http:80:5000</pre>
 
         Each command will reconfigure the nginx, and after the second command you should be able to access the application at the given port.

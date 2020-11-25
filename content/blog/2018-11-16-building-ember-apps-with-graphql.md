@@ -7,6 +7,7 @@ categories:
   - Learning
   - Tools
 ---
+
 GraphQL has become increasingly popular over the past few years. Unlike much of the hype coming from Facebook this technology isn't specific to any one language, it really can be used to connect [a number of servers and clients](https://graphql.org/code). This also made is particularly interesting to me that it is aimed at uprooting existing API REST conventions that we've been using for many years.
 
 Luckily, at work I was able to experiment with the integration of Ember with GraphQL and I have a few takeaways to share. I would recommend checking out the conference talk my friend Rocky and I gave on this subject at EmberFest 2018. I also prepared an accompanying Ember [sample repo](https://github.com/chadian/ember-graphql-examples) showing how to integrate a few different clients with Ember, test techniques and other GraphQL goodies within an Ember project.

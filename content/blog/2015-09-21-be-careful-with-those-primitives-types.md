@@ -7,6 +7,7 @@ categories:
 tags:
   - javascript
 ---
+
 This is probably a refresher for most, but I was curious about how js is handling typing. After all we have <span class="lang:default decode:true crayon-inline ">String</span> , <span class="lang:default decode:true crayon-inline ">Number</span> , and <span class="lang:default decode:true crayon-inline">Boolean</span>  global objects that have these wonderful prototypes that get us some really handy functions. So we can do something like:
 
 <pre class="lang:js decode:true">console.log("HELLO, I'M TALKING SOFTLY".toLowerCase());

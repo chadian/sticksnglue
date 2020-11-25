@@ -6,6 +6,7 @@ categories:
   - Learning
   - Projects
 ---
+
 Javascript promises have been around for a bit (especially in terms of "internet years"). On both the frontend and the backend we use them as a way of control-flow, handling asynchronous craziness, and taming the once dreaded callback hell. They've been so great that we are starting to explore [many](http://ember-concurrency.com/) [other](https://github.com/ReactiveX/rxjs) [ideas](https://github.com/mobxjs/mobx) around asyncronousity and complex UIs.
 
 But let's hold up for a second. We've all used promises, but how well do we really understand them? Myself, I thought I had a pretty solid understanding. After seeing a number of design patterns and using them as a first class citizen in Ember for awhile, what secrets could remain?

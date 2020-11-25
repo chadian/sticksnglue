@@ -8,15 +8,16 @@ tags:
   - regex
   - regular expressions
 ---
+
 If you're like me and you've relied on regex to quickly solve the odd search problem and string mashing, but haven't really made use of some of the shortcuts and optimizations, then I recommend giving this video a shot (thanks to smashing magazine for [tweeting this video](https://twitter.com/smashingmag/status/326012584312569856)). She provides a decent breakdown behind the logic in tackling problems with regular expressions, including if you should use them at all. There's also skill testing questions throughout which are a fun challenge as you go.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EkluES9Rvak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 A few more resources to keep you going after the video:
 
-  * [A handy cheat sheet](http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)
-  * [Regular expressions book, with exercises](http://regex.learncodethehardway.org/book/)
-  * [Regex source code if you're even more curious (scroll down a bit on page)](http://www.codeguru.com/cpp/cpp/string/regex/article.php/c2791/Using-Regular-Expressions-for-SearchReplace.htm)
+- [A handy cheat sheet](http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)
+- [Regular expressions book, with exercises](http://regex.learncodethehardway.org/book/)
+- [Regex source code if you're even more curious (scroll down a bit on page)](http://www.codeguru.com/cpp/cpp/string/regex/article.php/c2791/Using-Regular-Expressions-for-SearchReplace.htm)
 
 If you have any regular expression resources / learning suggestions feel free to leave them in the comments. Thanks!
 

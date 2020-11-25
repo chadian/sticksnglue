@@ -3,8 +3,9 @@ id: 170
 title: Mac OSX 10.9.1 Crash on Sleep or Shutdown
 date: 2014-01-30T03:39:54+00:00
 categories:
-  - 'Bugs & Fixes'
+  - "Bugs & Fixes"
 ---
+
 I write this on my Mid-2010 MacBook Pro that is finally able to boot, sleep, and shutdown successfully on 10.9.1. It seems like there are variations of this problem on 10.9 and 10.9.1 that many are experiencing. Normally I wouldn't take time to blog about random troubleshooting issues but this one in particular was a pain, and it's my hope this will help someone.
 
 **The issue**

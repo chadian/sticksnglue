@@ -5,6 +5,7 @@ date: 2018-08-24T23:36:29+00:00
 categories:
   - Blurbs
 ---
+
 I started my career working for digital agencies where sharing styles across bigger content systems was a big part of my day-to-day. Starting with SMACSS and BEM we were able to create logical systems to tame our cascading styles . These efforts were made easier with the rise of style preprocessors like less, sass and stylus. Now we have the introduction of various tooling kept our CSS even leaner; we could check for unused styles, statically [determine if styles are being used](https://css-blocks.com/), and run [transforms against a CSS AST](https://github.com/postcss/postcss) with any [number of plugins](https://github.com/postcss/postcss/blob/master/docs/plugins.md).
 
 One idea that changes the approach of how CSS is introduced are the flavours of CSS-in-JS, popularized by the React community. The functional approach to folding reusable CSS together and applying it to the target, in this case usually a component, had an elegance packed with a huge productivity win.
@@ -30,13 +31,13 @@ The solution I propose relies on a few conventions and is something that can be
 
 The solution aims to:
 
-  1. Make style definitions simpler to track
-  2. Allow styles to be easily composed
+1. Make style definitions simpler to track
+2. Allow styles to be easily composed
 
 The idea does rely on a few assumptions like:
 
-  1. You are using a preprocessor, or PostCSS, with support for something similar to a sass `@mixin`
-  2. You are using, or can introduce, something like PostCSS to perform some clean-up, _see Handling conflicts_
+1. You are using a preprocessor, or PostCSS, with support for something similar to a sass `@mixin`
+2. You are using, or can introduce, something like PostCSS to perform some clean-up, _see Handling conflicts_
 
 ### One Class – Easy to track definitions
 

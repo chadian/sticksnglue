@@ -27,18 +27,23 @@ class BlogPostTemplate extends React.Component {
           </article>
           <hr />
 
-          <ul style={{
-            marginTop: '3rem',
-            marginRight: 0,
-            marginLeft: 0,
-            padding: 0,
-            listStyleType: 'none'
-          }}>
+          <ul
+            style={{
+              marginTop: "3rem",
+              marginRight: 0,
+              marginLeft: 0,
+              padding: 0,
+              listStyleType: "none",
+            }}
+          >
             {previous && (
               <li>
                 <Link
-                  to={previous.fields.slug} rel="prev"
-                  dangerouslySetInnerHTML={{ __html: `← ${previous.frontmatter.title}` }}
+                  to={previous.fields.slug}
+                  rel="prev"
+                  dangerouslySetInnerHTML={{
+                    __html: `← ${previous.frontmatter.title}`,
+                  }}
                 />
               </li>
             )}
@@ -48,7 +53,9 @@ class BlogPostTemplate extends React.Component {
                 <Link
                   to={next.fields.slug}
                   rel="next"
-                  dangerouslySetInnerHTML={{ __html: `${next.frontmatter.title} →` }}
+                  dangerouslySetInnerHTML={{
+                    __html: `${next.frontmatter.title} →`,
+                  }}
                 />
               </li>
             )}

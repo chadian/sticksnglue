@@ -7,6 +7,7 @@ categories:
 tags:
   - news
 ---
+
 Yahoo has bought Tumblr in an **all cash** deal for **1.1 billion**. Incredible! I like the idea of tumblr, a network of blogging, with twitter-esque following. Here's hoping that Yahoo under Marissa's direction can continue to tie together the aging properties that is yahoo (hey, look at the flickr update– that wasn't so bad).
 
 More information from the folks at the [New York Times](http://www.nytimes.com/2013/05/21/technology/social-media-is-moving-into-creativity-like-tumblr.html). One quote from the article worth mentioning:
