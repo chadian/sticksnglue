@@ -10,22 +10,30 @@ There will be times where you need to server some files through a browser and in
 
 ## Node
 
-First install <span class="lang:default decode:true  crayon-inline ">http-server</span> globally via npm.
+First install `http-server` globally via npm.
 
-<pre class="lang:default decode:true">npm install -g http-server</pre>
+```shell
+npm install -g http-server
+```
 
 Then it's as easy as
 
-<pre class="lang:default decode:true">http-server</pre>
+```shell
+http-server
+```
 
 ## PHP
 
-<span class="lang:default decode:true  crayon-inline">php -S <domain>:<port></span>
+```shell
+php -S <domain>:<port>
+```
 
-ie: <span class="lang:default decode:true  crayon-inline ">php -s localhost:8000</span>
+ie: `php -s localhost:8000`
 
 ## Python
 
-<pre class="lang:default decode:true">python -m SimpleHTTPServer <port></pre>
+```
+python -m SimpleHTTPServer
+```
 
-ie: <span class="lang:default decode:true  crayon-inline ">python -m SimpleHTTPServer 8000</span>
+ie: `python -m SimpleHTTPServer 8000`
