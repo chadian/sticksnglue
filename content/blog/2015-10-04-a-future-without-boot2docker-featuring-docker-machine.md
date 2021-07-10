@@ -21,36 +21,36 @@ Getting things going on a Mac is easier than ever, and Docker provides a [Toolbo
 
 _Prerequisite – Homebrew Cask installed? Cask lets you install installers via homebrew._
 
-<pre class="lang:sh decode:true">brew tap caskroom/cask</pre>
+<pre className="lang:sh decode:true">brew tap caskroom/cask</pre>
 
-<pre class="lang:sh decode:true">brew install caskroom/cask/brew-cask</pre>
+<pre className="lang:sh decode:true">brew install caskroom/cask/brew-cask</pre>
 
 With Homebrew Cask installed, in your terminal run:
 
-<pre class="lang:sh decode:true">brew cask install virtualbox</pre>
+<pre className="lang:sh decode:true">brew cask install virtualbox</pre>
 
 [VirtualBox](https://www.virtualbox.org) will run the virtual machine that runs linux, which will run Docker. Docker machine supports other means of virtualization, but I've only used VirtualBox as it's free and been used for similar purposes by projects like Otto, Vagrant and boot2docker.
 
 With VirtualBox ready, we just need Docker Machine, in your terminal run:
 
-<pre class="lang:sh decode:true">brew install docker-machine</pre>
+<pre className="lang:sh decode:true">brew install docker-machine</pre>
 
-Now you should have access to <span class="lang:default decode:true crayon-inline ">docker-machine</span>  on the command line, and we can go ahead and setup a virtual machine that docker can use. Let's create a docker engine, in your terminal run:
+Now you should have access to <span className="lang:default decode:true crayon-inline ">docker-machine</span>  on the command line, and we can go ahead and setup a virtual machine that docker can use. Let's create a docker engine, in your terminal run:
 
-<pre class="lang:sh decode:true">docker-machine create --driver virtualbox dev</pre>
+<pre className="lang:sh decode:true">docker-machine create --driver virtualbox dev</pre>
 
-This will create a docker machine named <span class="lang:default decode:true crayon-inline">dev</span>. You can take a look at the docker machines at your disposal by putting  <span class="lang:default decode:true crayon-inline">docker-machine ls</span>  in your terminal.
+This will create a docker machine named <span className="lang:default decode:true crayon-inline">dev</span>. You can take a look at the docker machines at your disposal by putting  <span className="lang:default decode:true crayon-inline">docker-machine ls</span>  in your terminal.
 
-Now we have a virtual machine, configured with docker, and running. If you restart your computer, or notice that after running <span class="lang:default decode:true crayon-inline ">docker-machine ls</span> that the <span class="lang:default decode:true crayon-inline ">STATE</span> isn't <span class="lang:default decode:true crayon-inline">Running</span> , then all you need to do is run <span class="lang:default decode:true crayon-inline ">docker-machine start dev</span> (in this case <span class="lang:default decode:true crayon-inline ">dev</span> denotes the name of the engine).
+Now we have a virtual machine, configured with docker, and running. If you restart your computer, or notice that after running <span className="lang:default decode:true crayon-inline ">docker-machine ls</span> that the <span className="lang:default decode:true crayon-inline ">STATE</span> isn't <span className="lang:default decode:true crayon-inline">Running</span> , then all you need to do is run <span className="lang:default decode:true crayon-inline ">docker-machine start dev</span> (in this case <span className="lang:default decode:true crayon-inline ">dev</span> denotes the name of the engine).
 
-The last step is to be able to actually execute commands against our Docker engine, and do things like create containers. As Docker Machine will let you run commands against any number of Docker engines, whether you have multiple virtual machines, cloud instances, your local <span class="lang:default decode:true crayon-inline ">docker</span>  command needs to be wired up so that its commands are directed at the correct engine. This is an important distinction so I'll repeat that, your local docker client that you access by the <span class="lang:default decode:true crayon-inline ">docker</span>  is completely agnostic to the docker engine it is running commands against. The commands could be running against an engine locally, in the cloud, it just needs to be setup to point at the right engine. This makes it really powerful by having one API to manage containers across a slew of engines.
+The last step is to be able to actually execute commands against our Docker engine, and do things like create containers. As Docker Machine will let you run commands against any number of Docker engines, whether you have multiple virtual machines, cloud instances, your local <span className="lang:default decode:true crayon-inline ">docker</span>  command needs to be wired up so that its commands are directed at the correct engine. This is an important distinction so I'll repeat that, your local docker client that you access by the <span className="lang:default decode:true crayon-inline ">docker</span>  is completely agnostic to the docker engine it is running commands against. The commands could be running against an engine locally, in the cloud, it just needs to be setup to point at the right engine. This makes it really powerful by having one API to manage containers across a slew of engines.
 
 Docker-machine makes setting up the your docker client easy by:
 
-<pre class="lang:sh decode:true ">eval "$(docker-machine env dev)"</pre>
+<pre className="lang:sh decode:true ">eval "$(docker-machine env dev)"</pre>
 
-(dev refers to the docker engine name that you can get from <span class="lang:default decode:true crayon-inline">docker-machine ls</span>). This command is setting up environment variables that your local docker uses, to see exactly what the <span class="lang:default decode:true crayon-inline ">eval</span>  is running behind the scenes put just <span class="lang:default decode:true crayon-inline">docker-machine env dev</span> in your terminal.
+(dev refers to the docker engine name that you can get from <span className="lang:default decode:true crayon-inline">docker-machine ls</span>). This command is setting up environment variables that your local docker uses, to see exactly what the <span className="lang:default decode:true crayon-inline ">eval</span>  is running behind the scenes put just <span className="lang:default decode:true crayon-inline">docker-machine env dev</span> in your terminal.
 
-With all this setup, you should be able to type <span class="lang:default decode:true crayon-inline ">docker info</span> and see all the information your local docker client has about what its current docker engine. At this point you're free to use the <span class="lang:default decode:true crayon-inline ">docker</span> command and have fun with containerizing your apps.
+With all this setup, you should be able to type <span className="lang:default decode:true crayon-inline ">docker info</span> and see all the information your local docker client has about what its current docker engine. At this point you're free to use the <span className="lang:default decode:true crayon-inline ">docker</span> command and have fun with containerizing your apps.
 
 Hope this made the Mac OS X with Docker setup a little clearer and easier, and provided a *homebrew way* of setting things up. If anything didn't make sense, or if I need to fix something please let me know! Thanks and Happy Dockering!

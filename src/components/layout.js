@@ -1,14 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
+import { MDXProvider } from "@mdx-js/react"
+import CodeBlock from './code-block';
 
 import "../../content/assets/scss/theme.scss"
 
 class Layout extends React.Component {
   render() {
     const { children } = this.props
+    const components = {
+      code: CodeBlock,
+    }
 
     return (
-      <>
+      <MDXProvider components={components}>
         <div className="page-container">
           <header className="header">
             <Link to="/">
@@ -21,7 +26,7 @@ class Layout extends React.Component {
         </div>
 
         <div className="page-container">{children}</div>
-      </>
+      </MDXProvider>
     )
   }
 }

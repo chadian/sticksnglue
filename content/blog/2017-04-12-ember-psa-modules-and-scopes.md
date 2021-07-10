@@ -14,7 +14,8 @@ I could have saved an hour of head scratching had I kept in mind a few basic pri
 
 Within Ember we get used to creating modules and exporting these object definitions.
 
-<pre class="lang:js decode:true">// app/components/super-component.js
+```js
+// app/components/super-component.js
 import Component from 'ember-component';
 
 const containerInScope = [];
@@ -27,19 +28,21 @@ export default Component.extend({
 
   // is the same as
   anotherContainer: containerInScope
-});</pre>
+});
+```
 
 We're lucky cause these automatically get picked up and registered the way we need them. Components and models, for example, end up getting registered as factories so that we can easily create many instances on the fly.
 
-We can see in <span class="lang:default decode:true  crayon-inline ">super-component</span>  that we have a few properties, <span class="lang:default decode:true  crayon-inline ">label</span>  and <span class="lang:default decode:true  crayon-inline ">container</span> . For each instance of the component we can do whatever want to the <span class="lang:default decode:true  crayon-inline ">label</span>  and only that instance's <span class="lang:default decode:true  crayon-inline ">label</span>  would be modified. However when it comes to doing a <span class="lang:default decode:true  crayon-inline ">pushObject</span>  (Ember's version of <span class="lang:default decode:true  crayon-inline ">push</span>  so that it can track changes) into the array all shared instances receive the value pushed since they are all pointing to the same array reference. This would also apply if we were modifying properties on an object that was created in the module's object definition.
+We can see in `super-component` that we have a few properties, `label` and `container`. For each instance of the component we can do whatever want to the `label` and only that instance's `label`  would be modified. However when it comes to doing a `pushObject` (Ember's version of `push` so that it can track changes) into the array all shared instances receive the value pushed since they are all pointing to the same array reference. This would also apply if we were modifying properties on an object that was created in the module's object definition.
 
 Another way to look at this is that we aren't maintaining changes to a string as changes to a string produce a new string in javascript, they're immutable. However we can maintain the reference to the object or array, and change the things they point to, ie: adding another object into the array while maintaining reference to the array.
 
-We  can combat this by doing a few things. When we do need a shared reference, be explicit and put it outside so that it's obvious like <span class="lang:default decode:true  crayon-inline ">containerInScope</span>  in the example.
+We  can combat this by doing a few things. When we do need a shared reference, be explicit and put it outside so that it's obvious like `containerInScope` in the example.
 
-When we don't want a shared reference either pass it in on the component in the template, or by using <span class="lang:default decode:true  crayon-inline ">.set</span> . When it's the responsibility of the component to a fresh instance available set it explicitly on <span class="lang:default decode:true  crayon-inline ">init</span>  like:
+When we don't want a shared reference either pass it in on the component in the template, or by using `.set`. When it's the responsibility of the component to a fresh instance available set it explicitly on `init` like:
 
-<pre class="lang:default decode:true">// app/components/super-component.js
+```js
+// app/components/super-component.js
 import Component from 'ember-component';
 
 const containerInScope = [];
@@ -52,7 +55,8 @@ export default Component.extend({
     this._super(...arguments);
     this.set('container', []);
   }
-});</pre>
+});
+```
 
 While these lessons aren't specific to Ember and essentially anybody exporting modules and relying on scoping could run into the same issue, I do feel Ember provides some magic that it's easy to fall that there are still basic javascript pitfalls.
 

@@ -17,9 +17,9 @@ I'm working on a project currently where I need to be able to use zip code data,
 
 With the MySQL database you have the options for doing geometric queries which I haven't delved too far into, but it seemed really useful. I was using this data for proximity-based searches, using someone's zip code.
 
-The SQL that comes with the download is irrelevant to MySQL as it doesn't work with that  <span class="lang:default decode:true  crayon-inline">AddGeometryColumn</span> function.
+The SQL that comes with the download is irrelevant to MySQL as it doesn't work with that  <span className="lang:default decode:true  crayon-inline">AddGeometryColumn</span> function.
 
-<pre class="lang:mysql decode:true">create table zcta (
+<pre className="lang:mysql decode:true">create table zcta (
     zip char(5) primary key,
     city varchar(64),
     state char(2),
@@ -33,7 +33,7 @@ However, the CSV data was full of what I needed. So after some looking around I 
 
 Here's the create table syntax:
 
-<pre class="lang:mysql decode:true">CREATE TABLE `zcta` (
+<pre className="lang:mysql decode:true">CREATE TABLE `zcta` (
   `zip` char(5) NOT NULL,
   `city` varchar(64) DEFAULT NULL,
   `state` char(2) DEFAULT NULL,
@@ -50,7 +50,7 @@ The MyISAM engine is apparently better for creating spatial indexes, according t
 
 Alright, so I'm running with the MyISAM engine. I have the CSV file, and the SQL file doesn't apply in this case. After building the table I am now able to import my data. The syntax for POINT columns is a little different so keep that in mind when inserting and selecting data. To get the CSV file into the right format I wrote this find/replace regex to run on the CSV data:
 
-<pre class="lang:default decode:true">Find: ^(((\(|)".*?",){3})"(.*?){1}","(.*?){1}"(,.*)$
+<pre className="lang:default decode:true">Find: ^(((\(|)".*?",){3})"(.*?){1}","(.*?){1}"(,.*)$
 Replace: \1 GeomFromText('POINT(\4 \5)')\6</pre>
 
 I then wrote the first part of the INSERT statement defining the necessary columns to be inserted. Run the script and you're data should import and you're ready to go. And that was able to get me the final format to insert the data into the SPATIAL-aware database setup with our long/lat POINT datatypes.
