@@ -54,7 +54,7 @@ module.exports = {
         trackingId: `UA-36856449-1`,
       },
     },
-    `gatsby-plugin-feed`,
+    `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-react-helmet`,
   ],
 }
