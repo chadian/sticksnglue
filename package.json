@@ -5,8 +5,11 @@
   "version": "0.1.0",
   "author": "Chad Carbert<chadcarbert@me.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled-base": "^10.0.27",
     "gatsby": "^2.13.51",
     "gatsby-image": "^2.2.8",
+    "gatsby-plugin-emotion": "^4.1.21",
     "gatsby-plugin-feed": "^2.3.6",
     "gatsby-plugin-google-analytics": "^2.1.6",
     "gatsby-plugin-manifest": "^2.2.4",
